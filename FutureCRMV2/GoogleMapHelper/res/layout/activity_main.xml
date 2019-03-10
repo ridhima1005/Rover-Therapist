@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/googleMapRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoogleMapActivity" >
+
+    <fragment
+        android1:id="@+id/fragment1"
+        android1:layout_width="match_parent"
+        android1:layout_height="match_parent"
+        android:layout_below="@+id/listView1"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <TextView
+        android:id="@+id/textViewMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android1:layout_alignLeft="@+id/fragment1"
+        android1:layout_alignParentTop="true"
+        android:gravity="center"
+        android:shadowColor="#222222"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="32dp"
+        android:visibility="invisible" />
+
+    <Button
+        android1:background="@android:drawable/btn_default_small"
+        android1:layout_marginLeft="1dp"
+        android1:drawableLeft="@drawable/icon_route"
+        android1:id="@+id/showAlternateRouteBtn"
+        style="?android:attr/buttonStyleSmall"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_alignParentTop="true"
+        android:textSize="18dp"
+        
+        android1:shadowColor="#333333"
+        android1:shadowRadius="2"
+        android1:text="  Route"
+        android1:textColor="#000000" />
+
+    <ListView
+        android1:id="@+id/listView1"
+        android1:layout_width="match_parent"
+        android1:layout_height="200dp"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/showAlternateRouteBtn"
+        android1:background="@drawable/listview_selector_even" >
+    </ListView>
+
+    <TextView
+        
+        android1:text="Directions"
+        android1:textColor="#000000"
+        android1:id="@+id/roadmapTitle"
+        android1:layout_width="match_parent"
+        android1:layout_height="match_parent"
+        android1:layout_above="@+id/listView1"
+        android1:layout_toLeftOf="@+id/showAlternateRouteBtn"
+        android1:background="#DD999999"
+        
+        android1:gravity="center"  android:textSize="20dp"
+       />
+
+   
+
+</RelativeLayout>
