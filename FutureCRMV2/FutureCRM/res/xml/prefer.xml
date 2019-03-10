@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="webServerSettings"
+        android:summary="Web Server Settings"
+        android:title="Web Server Settings" >
+        <EditTextPreference
+            android:dialogTitle="Server IP Address"
+            android:key="serverIP"
+            android:summary="Server IP"
+            android:title="Server IP" />
+        <EditTextPreference
+            android:dialogTitle="Server Port No"
+            android:key="serverPort"
+            android:summary="Server Port"
+            android:title="Server Port" />
+        <EditTextPreference
+            android:dialogTitle="Latitude"
+            android:key="latitude"
+            android:summary="latitude"
+            android:title="latitude" />
+        <EditTextPreference
+            android:key="longitude"
+            android:summary="longitude"
+            android:title="longitude" />
+        <EditTextPreference
+            android:dialogTitle="types"
+            android:key="types"
+            android:summary="types"
+            android:title="types" />
+        <EditTextPreference
+            android:dialogTitle="distance"
+            android:key="distance"
+            android:summary="distance"
+            android:title="distance" />
+        <EditTextPreference
+            android:dialogTitle="taxiRates1stkm"
+            android:key="taxiRates1stkm"
+            android:summary="taxiRates1stkm"
+            android:title="taxiRates1stkm" />
+        <EditTextPreference
+            android:dialogTitle="taxiRates"
+            android:key="taxiRates"
+            android:summary="taxiRates"
+            android:title="taxiRates" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
