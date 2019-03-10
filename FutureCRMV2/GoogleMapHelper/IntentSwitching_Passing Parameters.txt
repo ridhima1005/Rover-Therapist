@@ -1,0 +1,64 @@
+	
+	
+	Intent Switching for type 1 
+
+
+	1.Enter values For Source to destination to draw map
+
+
+		intent.putExtra("TYPE", 1);			//not null
+
+		intent.putExtra("SHOW_DISTANCE_TIME", true);	//not null
+
+		intent.putExtra("src", from);			//not null
+
+		intent.putExtra("src_title", "Source "); 	//null
+
+		intent.putExtra("src_desc", "Source Description");  //null
+
+		intent.putExtra("src_icon", bitmap1);		// null
+		
+		intent.putExtra("dest", to);			//not null
+
+		intent.putExtra("dest_title", "Destination");	 //null
+
+		intent.putExtra("dest_desc", "Destination Desc"); //null
+
+		intent.putExtra("dest_icon", bitmap2);		// null
+
+
+
+	Intent Switching for type 2
+
+	2. Enter Address to draw Single Marker
+ 
+ 	 	intent.putExtra("TYPE", 2);			//not null
+
+		intent.putExtra("SHOW_DISTANCE_TIME", false);	//not null
+
+		intent.putExtra("src", Address);		//not null
+
+		intent.putExtra("src_title", "Source "); 	//null
+
+		intent.putExtra("src_desc", "Source Description");  //null
+
+		intent.putExtra("single_icon", bitmap);		// null
+
+		
+
+	Intent Switching for type 3
+
+	3. Enter Array to Multiple Marker 
+	
+	intent.putExtra("TYPE", 2);			//not null
+
+	intent.putExtra("SHOW_DISTANCE_TIME", false);	//not null
+	
+	Array List location address and Title		//not null
+
+	
+		
+
+
+
+

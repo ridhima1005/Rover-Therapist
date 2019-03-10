@@ -1,0 +1,13 @@
+Intent intent = new Intent(getApplicationContext(),
+							GpsmapActivity.class);
+							intent.putExtra("TYPE", 1);
+		intent.putExtra("SHOW_DISTANCE_TIME", true);
+		intent.putExtra("src", f);
+		intent.putExtra("src_title", "Source ");
+		intent.putExtra("src_desc", "Source Description");
+		intent.putExtra("BitmapImage", bitmap);
+		
+		intent.putExtra("dest", t);
+		intent.putExtra("dest_title", "Destination");
+		intent.putExtra("dest_desc", "Destination Desc");
+					startActivity(intent);
