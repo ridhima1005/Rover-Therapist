@@ -1,0 +1,831 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.0.51
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema touristcrm
+--
+
+CREATE DATABASE IF NOT EXISTS touristcrm;
+USE touristcrm;
+
+--
+-- Definition of table `domain`
+--
+
+DROP TABLE IF EXISTS `domain`;
+CREATE TABLE `domain` (
+  `domainId` int(10) unsigned NOT NULL auto_increment,
+  `domainDesc` varchar(45) NOT NULL,
+  PRIMARY KEY  (`domainId`)
+) ENGINE=MyISAM AUTO_INCREMENT=97 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `domain`
+--
+
+/*!40000 ALTER TABLE `domain` DISABLE KEYS */;
+INSERT INTO `domain` (`domainId`,`domainDesc`) VALUES 
+ (1,'Attractions'),
+ (2,'accounting'),
+ (3,'airport'),
+ (4,'amusement_park'),
+ (5,'aquarium'),
+ (6,'art_gallery'),
+ (7,'atm'),
+ (8,'bakery'),
+ (9,'bank'),
+ (10,'bar'),
+ (11,'beauty_salon'),
+ (12,'bicycle_store'),
+ (13,'book_store'),
+ (14,'bowling_alley'),
+ (15,'bus_station'),
+ (16,'cafe'),
+ (17,'campground'),
+ (18,'car_dealer'),
+ (19,'car_rental'),
+ (20,'car_repair'),
+ (21,'car_wash'),
+ (22,'casino'),
+ (23,'cemetery'),
+ (24,'church'),
+ (25,'city_hall'),
+ (26,'clothing_store'),
+ (27,'convenience_store'),
+ (28,'courthouse'),
+ (29,'dentist'),
+ (30,'department_store'),
+ (31,'doctor'),
+ (32,'electrician'),
+ (33,'electronics_store'),
+ (34,'embassy'),
+ (35,'establishment'),
+ (36,'finance'),
+ (37,'fire_station'),
+ (38,'florist'),
+ (39,'food'),
+ (40,'funeral_home'),
+ (41,'furniture_store'),
+ (42,'gas_station'),
+ (43,'general_contractor'),
+ (44,'grocery_or_supermarket'),
+ (45,'gym'),
+ (46,'hair_care'),
+ (47,'hardware_store'),
+ (48,'health'),
+ (49,'hindu_temple'),
+ (50,'home_goods_store'),
+ (51,'hospital'),
+ (52,'insurance_agency'),
+ (53,'jewelry_store'),
+ (54,'laundry'),
+ (55,'lawyer'),
+ (56,'library'),
+ (57,'liquor_store'),
+ (58,'local_government_office'),
+ (59,'locksmith'),
+ (60,'lodging'),
+ (61,'meal_delivery'),
+ (62,'meal_takeaway'),
+ (63,'mosque'),
+ (64,'movie_rental'),
+ (65,'movie_theater'),
+ (66,'moving_company'),
+ (67,'museum'),
+ (68,'night_club'),
+ (69,'painter'),
+ (70,'park'),
+ (71,'parking'),
+ (72,'pet_store'),
+ (73,'pharmacy'),
+ (74,'physiotherapist'),
+ (75,'place_of_worship'),
+ (76,'plumber'),
+ (77,'police'),
+ (78,'post_office'),
+ (79,'real_estate_agency'),
+ (80,'restaurant'),
+ (81,'roofing_contractor'),
+ (82,'school'),
+ (83,'shoe_store'),
+ (84,'shopping_mall'),
+ (85,'spa'),
+ (86,'stadium'),
+ (87,'storage'),
+ (88,'store'),
+ (89,'subway_station'),
+ (90,'synagogue'),
+ (91,'taxi_stand'),
+ (92,'train_station'),
+ (93,'travel_agency'),
+ (94,'university'),
+ (95,'veterinary_care'),
+ (96,'zoo');
+/*!40000 ALTER TABLE `domain` ENABLE KEYS */;
+
+
+--
+-- Definition of table `domaininfo`
+--
+
+DROP TABLE IF EXISTS `domaininfo`;
+CREATE TABLE `domaininfo` (
+  `iddomainInfo` int(10) unsigned NOT NULL auto_increment,
+  `domainId` int(10) unsigned NOT NULL,
+  `description` longtext NOT NULL,
+  `location` varchar(255) NOT NULL,
+  `updatedDate` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `photourl` varchar(255) default NULL,
+  `pincode` varchar(10) default NULL,
+  `latitude` varchar(100) NOT NULL,
+  `longitude` varchar(100) NOT NULL,
+  `rating` int(11) NOT NULL,
+  `ratinguserName` varchar(1000) NOT NULL,
+  `phoneNumber` varchar(15) NOT NULL,
+  `review` varchar(4000) NOT NULL,
+  PRIMARY KEY  (`iddomainInfo`)
+) ENGINE=MyISAM AUTO_INCREMENT=389 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `domaininfo`
+--
+
+/*!40000 ALTER TABLE `domaininfo` DISABLE KEYS */;
+INSERT INTO `domaininfo` (`iddomainInfo`,`domainId`,`description`,`location`,`updatedDate`,`photourl`,`pincode`,`latitude`,`longitude`,`rating`,`ratinguserName`,`phoneNumber`,`review`) VALUES 
+ (213,2,'Catholic Syrian Bank','Pune-Nashik Highway, Kuruli, Maharashtra 410501, India','2015-01-26 17:09:47',NULL,NULL,'18.74543257677004','73.8595685362815',8,'','020 24452838','ATM'),
+ (212,2,'Canara Bank','1206/B/6, Rambhau Palshikar Path, Shivajinagar, Pune, Maharashtra 411004, India','2015-01-26 17:06:09',NULL,NULL,'18.520957784586557','73.8440036773681',7,'','18004256000','ATM'),
+ (207,1,'Pune Airport','Pune International Airport Area, Lohegaon, Pune, Maharashtra 411032, India','2015-01-26 16:35:03',NULL,NULL,'18.5863637717892','73.9192289266401',9,'','020 2668 5201','Pune Airport is located approximately 10 km north-east of Pune in the state of Maharashtra, India.'),
+ (208,2,'Axis Bank','9, Samarth Road, Madhusanchay Society, Tejonidhi Housing Society, Ganesh Nagar, Karvenagar, Pune, Maharashtra 411052, India','2015-01-26 16:53:01',NULL,NULL,'18.493498848395273','73.8253878076053',7,'','020 25520482','ATM'),
+ (209,2,'Bank Of Baroda','Moledina Road, Hulshur, Camp, Pune, Maharashtra 411001, India','2015-01-26 16:56:23',NULL,NULL,'18.518244705825346','73.8800733555532',7,'','020 26135857','ATM'),
+ (210,2,'Bank of India ATM','3, Bebvewadi, Market Yard, Pune - 37','2015-01-26 16:59:09',NULL,NULL,'18.518244705825346','73.8800733555532',8,'','18004251112','ATM'),
+ (211,2,'Bank of Maharashtra','51, Shreemant Thorle Bajirav Peshve Road, Tulshibaug, Budhwar Peth, Pune, Maharashtra 411002, India','2015-01-26 17:02:13',NULL,NULL,'18.51387711651385','73.8538742065429',1,'','020 24473712','ATM'),
+ (214,2,'Central Bank of India','Tilak road, Ganganagar, Pimpri Chinchwad, Pune - 44','2015-01-26 17:13:39',NULL,NULL,'18.508739379364062','73.8099181652069',1,'','24457947','ATM'),
+ (215,2,'Centurion Bank','1137/42, Model Colony, Shivajinagar, Pune, Maharashtra 411016, India','2015-01-26 17:15:58',NULL,NULL,'18.530318101273494','73.8433619681742',8,'','020 25653318','ATM'),
+ (216,2,'City Bank','1187/30, Vamanrao Malhar Joshi Marg, Shivajinagar, Pune, Maharashtra 411005, India','2015-01-26 17:18:06',NULL,NULL,'18.523850894945177','73.8474375008081',7,'','020 56012484','ATM'),
+ (217,2,'Corporation Bank','Pune-Solapur Highway, Camp, Pune, Maharashtra 411001, India','2015-01-26 17:23:15',NULL,NULL,'18.50825668276132','73.891987800498',1,'','18004252407','ATM'),
+ (218,2,'Dena Bank','1084, National Highway 4, Subhash Nagar, Shukrawar Peth, Pune, Maharashtra 411002, India','2015-01-26 17:24:50',NULL,NULL,'18.501487141194666','73.8583421055224',7,'','1800 233 6427','ATM'),
+ (219,2,'ICICI Bank','Chaturshringi Road, Model Colony, Shivajinagar, Pune, Maharashtra 411016, India','2015-01-26 17:26:54',NULL,NULL,'18.530885373287855','73.835164308502',5,'','020 66027000','ATM'),
+ (220,2,'IDBI Bank','Chaturshringi Road, Model Colony, Shivajinagar, Pune, Maharashtra 411016, India','2015-01-26 17:29:15',NULL,NULL,'18.534068227811296','73.8343060016995',5,'','020 66028998','ATM'),
+ (221,2,'HDFC Bank','1206-B-23, Rambhau Palshikar Path, Shivajinagar, Pune, Maharashtra 411004, India','2015-01-26 17:31:22',NULL,NULL,'18.5205141213403','73.8449484108423',1,'','020 26430266','ATM'),
+ (222,3,'Minotra Automobiles','5/255, Kharadi Road, Chandan Nagar, Pune, Maharashtra 411014, India','2015-01-26 17:36:00',NULL,NULL,'18.562924550067148','73.9322463516142',8,'','020-40417548','Shop'),
+ (223,3,'Bajaj Dhanvit Automobiles','50/10/9, Wadgaon Budruk, Narhe, Pune, Maharashtra 411041, India','2015-01-26 17:37:20',NULL,NULL,'18.457409495496165','73.8178233150389',6,'','020-40422570','Shop'),
+ (224,3,'Gyani Motors','388, Bootee Street, Nana Peth, Ganesh Peth, Pune, Maharashtra 411002, India','2015-01-26 17:38:28',NULL,NULL,'18.51536625958998','73.8697347883131',8,'','09637899959','Shop'),
+ (225,3,'Balaji Automobile','208/2/18, H.A. Colony, MIDC, Pimpri, Pimpri-Chinchwad, Maharashtra 411018, India','2015-01-26 17:40:04',NULL,NULL,'18.6232430754517','73.8022604677822',10,'','09850504344','Shop'),
+ (226,3,'Poona Scooters','2, Shatlejatat Dhandge Path, MIDC, Pimpri, Pimpri-Chinchwad, Maharashtra 411018, India','2015-01-26 17:41:58',NULL,NULL,'18.62529617430638','73.804272795095',10,'','9372463011','Dealer'),
+ (227,3,'Bhama Motors Pvt Ltd','Shivaji Road, Police Colony, Swargate, Pune, Maharashtra 411042, India','2015-01-26 17:44:05',NULL,NULL,'18.50212071230441','73.8586981594562',7,'','020 2443 0974','Shop'),
+ (228,3,'Automotive Manufacturers ,Wagholi','Maharashtra State Highway 27, Maharashtra 412207, India','2015-01-26 17:46:16',NULL,NULL,'18.598604600419975','74.007354900240',6,'','9823333283','Shop'),
+ (229,3,'Shanti Traders','1021, Haji Shekh Janudip Road, Nana Peth, Ganesh Peth, Pune, Maharashtra 411002, India','2015-01-26 17:48:20',NULL,NULL,'18.512799349043185','73.8676439970731',9,'','9822673731','Shop'),
+ (230,3,'Satguru Automobiles','B-14, H.A. Colony, H.A. Colony, MIDC, Pimpri, Pimpri-Chinchwad, Maharashtra 411018, India','2015-01-26 17:53:13',NULL,NULL,'18.623635151185436','73.8054656982421',1,'','9373777013','Shop'),
+ (231,3,'Nimesh Motors','Pune-Bangalore Highway, Vasant Baug, Panchganga Society, Maharshi Nagar, Pune, Maharashtra 411037, India','2015-01-26 17:55:31',NULL,NULL,'18.484577230274475','73.8576956838369',3,'','9373329244','Shop'),
+ (232,3,'Gurunanak Auto Spares','1021, Haji Shekh Janudip Road, Nana Peth, Ganesh Peth, Pune, Maharashtra 411002, India','2015-01-26 17:57:46',NULL,NULL,'18.512798077337134','73.8676446676254',7,'','9373056353','Shop'),
+ (233,3,'Shri Dattatray Auto Pvt Ltd','1730, Madiwale Colony, Sadashiv Peth, Pune, Maharashtra 411030, India','2015-01-26 17:59:29',NULL,NULL,'18.507793205011577','73.8516426086425',7,'','020-24470777','Shop'),
+ (234,4,'New Poona Bakery','759/36, Bhandarkar Road, Deccan Gymkhana, Pune, Maharashtra 411004, India','2015-01-26 18:04:28',NULL,NULL,'18.51763557874414','73.8406616449356',7,'','020-25664968','Cake & Bakery Produts'),
+ (235,4,'The Cake And Cream Factory','98/12, Paud Road, Bhusari Colony, Kothrud, Pune, Maharashtra 411038, India','2015-01-26 18:08:13',NULL,NULL,'18.508220510205554','73.7904198467731',8,'','020-40414391','Cake Shop'),
+ (236,4,'Bangalore Iyangar Bakery','Nimhan Mala Road, Ward No. 8, Pashan Gaon, Pashan, Pune, Maharashtra 411008, India','2015-01-26 18:13:01',NULL,NULL,'18.541628402365998','73.7994575500488',9,'','8805542112','Cake & Bakrey Product'),
+ (237,4,'Monginis Cake Shop','Dhayri Phata, Wadgaon Budruk, Narhe, Pune, Maharashtra 411041','2015-01-26 18:19:11',NULL,NULL,'18.46134475346533','73.8130375742912',7,'','8412524112','Cake Shop'),
+ (238,4,'Urja Bakery & Dairy','24, Dhanori, Pune, Maharashtra 411015, India','2015-01-26 18:20:39',NULL,NULL,'18.5908324756514','73.8942656014111',6,'','099707 08882','Cake and Bakery Products'),
+ (239,4,'Crown Bakery','19-1-BB, Warje Malwadi Road, Karvenagar, Pune, Maharashtra 411052, India','2015-01-26 18:27:15',NULL,NULL,'18.488200870757506','73.8138295058157',5,'','9403392182','Cake And Bakery Produts'),
+ (240,4,'FERNANDES BAKERY','2140, Mahatma Phule Rasta, New Modikhana, Katad Khana, Pune, Maharashtra 411001, India','2015-01-26 18:30:19',NULL,NULL,'18.507236807610177','73.8781736884262',9,'','9923545568','The Cake And Bakery Shop'),
+ (241,4,'Honey Well','Geetganga Society Road, Kothrud, Pune, Maharashtra 411052, India','2015-01-26 18:33:44',NULL,NULL,'18.49588022261425','73.8171482062898',8,'','9922220700','The Cake And Bakery Products'),
+ (242,4,'Hindustan bakery','768, Swatantrya Sainik Damodar Parani Road, Narayan Peth, Pune, Maharashtra 411030, India','2015-01-26 18:37:36',NULL,NULL,'18.514315851770018','73.847045972943',7,'','7276857661','The Cake And Bakery Produts'),
+ (243,4,'Rajdhani Bakery','Moshi Alandi Road, Moshi Gaon, Moshi, Pimpri-Chinchwad, Maharashtra 412105, India','2015-01-26 18:39:12',NULL,NULL,'18.676758519463355','73.8525800406932',9,'','020-40416058','The Cake Shop'),
+ (244,4,'Sweet Chariot Cafe','28, North Main Road, Ragvilas Society, Koregaon Park, Pune, Maharashtra 411001, India','2015-01-26 18:43:18',NULL,NULL,'18.539685552128077','73.8948690891265',8,'','9730044611','The Cafe And Cake Shop'),
+ (245,4,'WS Bakery','1635, Gopal Gayan Samaj Road, Perugate, Sadashiv Peth, Pune, Maharashtra 411030, India','2015-01-26 18:45:36',NULL,NULL,'18.508841754098018','73.8485996425151',7,'','020-240424855','The Cafe Shop'),
+ (246,5,'State Bank Of India','NIBM Road, Clover Hills Housing Society, Mohammed Wadi, Pune, Maharashtra 411048, India','2015-01-26 18:48:54',NULL,NULL,'18.469518359813897','73.9005828648805',8,'','020-24476793','Bank'),
+ (247,5,'State Bank of India','1206-36, Shirole Road, Shivajinagar, Pune, Maharashtra 411004, India','2015-01-26 18:54:10',NULL,NULL,'18.521273152352247','73.8466697931289',7,'','020-25652607','National Bank'),
+ (248,5,'ICICI','247/2, Phase 2 Road, Hinjewadi Phase II, Phase 1, Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057, India','2015-01-26 18:56:05',NULL,NULL,'18.594975665739245','73.7211672216653',9,'','020-22974352','National Bank'),
+ (249,5,'IDBI','Dnyaneshwar Paduka Chowk, Fergusson College Campus, Shivajinagar, Pune, Maharashtra 411004','2015-01-26 18:57:57',NULL,NULL,'18.526502704409584','73.8418518751859',8,'','18002001947','National Bank'),
+ (251,5,'HDFC','La Ratan Lane, Baner, Pune, Maharashtra 411045, India','2015-01-26 19:02:07',NULL,NULL,'18.565165904282985','73.774508982896',6,'','020-61606161','National Bank'),
+ (252,5,'Bank of Maharashtra','Modern Cafe, Shivajinagar, Pune, Maharashtra 411005','2015-01-26 19:05:04',NULL,NULL,'18.5267894509062','73.8518303632736',2,'','020-25532930','National Bank'),
+ (253,5,'Mahesh Sahkari Bank Ltd','B2, Girija Shankar Vihar, Ganesh Nagar, Karvenagar, Pune, Maharashtra 411052, India','2015-01-26 19:07:39',NULL,NULL,'18.49492204377366','73.8231689482927',7,'','020-25451549','Sahkari Bank'),
+ (254,5,'Dena Bank','961, National Highway 4, Subhash Nagar, Shukrawar Peth, Pune, Maharashtra 411002, India','2015-01-26 19:09:05',NULL,NULL,'18.503052080569763','73.8588020950555',8,'','020-24272426','Sahkari Bank'),
+ (255,5,'Saraswat Bank','43/14, Praboodhan Road, Apex Colony, Erandwane, Pune, Maharashtra 411004, India','2015-01-26 19:10:50',NULL,NULL,'18.509237899230747','73.8312149047851',9,'','020-25435937','Sahkari Bank'),
+ (256,6,'Skye Resto Lounge','103, Senapati Bapat Road, Shivaji Co operative Housing Society, Bhageerath, Gokhalenagar, Pune, Maharashtra 411016, India','2015-01-26 19:22:01',NULL,NULL,'18.535180537877856','73.8298758212473',10,'','020-40018910','Restaurant and Bar'),
+ (257,6,'Suruchi restaurant & bar','4/10, Maharshi Karve Road, Pandurang Colony, Erandwane, Pune, Maharashtra 411004, India','2015-01-26 19:23:32',NULL,NULL,'18.508667517423998','73.831370482220',7,'','8237148438','Restaurant & Bar'),
+ (258,6,'Orgia The Lounge','130, Mhatre Bridge, Vakil Nagar, Erandwane, Pune, Maharashtra 411004, India','2015-01-26 19:25:02',NULL,NULL,'18.505412476285336','73.8334270659830',8,'','020-25446464','Lounge'),
+ (259,6,'Kiva Lounge','210/A, Sinchan Nagar, Ashok Nagar, Pune, Maharashtra 411016, India','2015-01-26 19:26:33',NULL,NULL,'18.543154812401838','73.8387457374483',10,'','083909 09918','Lounge'),
+ (260,6,'Apache Fluid Lounge','16, Pashan Road, Bawdhan Nagar, Bavdhan, Pune, Maharashtra 411021, India','2015-01-26 19:28:57',NULL,NULL,'18.508116218657563','73.7834575120356',8,'','020-22951560','Lounge'),
+ (261,6,'Hidden Place','B3, North Main Road, Vasani Nagar, Koregaon Park, Pune, Maharashtra 411001, India','2015-01-26 19:30:35',NULL,NULL,'18.53962706283853','73.8861257582902',6,'','020-66215922','Resto & Lounge'),
+ (262,6,'D\'Palace Restaurant and Bar','Bavdhan Road, Lantana Gardens, Bavdhan, Pune, Maharashtra 411021, India','2015-01-26 19:32:13',NULL,NULL,'18.51761268868103','73.7802227586507',10,'','020-22951528','Bar & Restaurant'),
+ (263,6,'Wtf!','Phoenix Boundary Road, Sakore Nagar, Viman Nagar, Pune, Maharashtra 411014, India','2015-01-26 19:34:17',NULL,NULL,'18.561871883081157','73.9169530663635',9,'','08975668877','Bar & Pub'),
+ (264,6,'MI-A-MI','Senapati Bapat Road, 30, Laxmi Society, Model Colony, Gokhalenagar, Pune, Maharashtra 411016, India','2015-01-26 19:36:15',NULL,NULL,'18.53257322603668','73.8296565506603',10,'','07798983322','Pub & Bar'),
+ (265,6,'K-Lounge','Kashibai Khilare Path, Bhalekar Chawl, Erandwane, Pune, Maharashtra 411004, India','2015-01-26 19:38:47',NULL,NULL,'18.507983957559492','73.8350779656317',7,'','020-2546624','Bar & Lounge'),
+ (266,7,'Lakme Salon','Laxmi Road, Marutirao Gaikwad Nagar, Aundh, Pune, Maharashtra 411007, India','2015-01-26 19:41:50',NULL,NULL,'18.557809264997218','73.8041588012125',7,'','020-25883656','Ladies Salon'),
+ (267,7,'Jawed Habib','Mumbai Highway, Gawaliwada, Modi Colony, Pune, Maharashtra 411001, India','2015-01-26 19:43:52',NULL,NULL,'18.51945468430159','73.8749530259516',4,'','098222 87748','Ladies Salon'),
+ (268,7,'Envivo Lounge Salon','7, Konark Nagar, Clover Park, Viman Nagar, Pune, Maharashtra 411014, India','2015-01-26 19:46:53',NULL,NULL,'18.5653133680836','73.911056900396',10,'','020-41516638','Ladies Salon and Spa'),
+ (269,7,'Meshail Unisex Salon And Spa','1198, Fergusson College Road, Shivajinagar, Pune, Maharashtra 411004, India','2015-01-26 19:47:56',NULL,NULL,'18.522303807103384','73.8413161132481',6,'','020-6401 7224','Unisex Salon and Spa'),
+ (270,7,'Amantra Spa','Magarpatta Police Station Road, Magarpatta City, Hadapsar, Pune, Maharashtra 411028, India','2015-01-26 19:50:18',NULL,NULL,'18.519426778501607','73.9311868790533',7,'','020-41527812','Spa for Ladies Only'),
+ (271,7,'The Gazelle','21, Road No 1, Nilanjali Society, Kalyani Nagar, Pune, Maharashtra 411006, India','2015-01-26 19:52:55',NULL,NULL,'18.548308044132288','73.8996769580986',8,'','020-66825060','The Beauty Saloon And Spa'),
+ (272,7,'Aromathai Spa Pvt Ltd','Samrat Ashok Road, Sakore Nagar, Viman Nagar, Pune, Maharashtra 411014, India','2015-01-26 19:56:07',NULL,NULL,'18.56310904237693','73.9215958115528',7,'','9167047444','The Beauty Spa'),
+ (273,7,'Jawed Habib Hair And Beauty','42, Canal Road, Pandurang Colony, Erandwane, Pune, Maharashtra 411004, India','2015-01-26 20:02:26',NULL,NULL,'18.504675427594186','73.8257265089123',7,'','020-40018028','The Unisex Saloon And Spa'),
+ (274,7,'Ora Regenesis Spa','East Avenue, Air Force Area, Nilanjali Society, Yerawada, Pune, Maharashtra 411006, India','2015-01-26 20:03:44',NULL,NULL,'18.553629581234702','73.9056965056803',9,'','9922900031','The Unisex Saloon And Spa'),
+ (275,7,'The Yung Spa','Phoenix Boundary Road, Sakore Nagar, Viman Nagar, Pune, Maharashtra 411014, India','2015-01-26 20:07:19',NULL,NULL,'18.562209423745998','73.9162637386467',9,'','7757900212','The Beauty Spa'),
+ (276,7,'The Gazelle','21, Road No 1, Nilanjali Society, Kalyani Nagar, Pune, Maharashtra 411006, India','2015-01-26 20:09:32',NULL,NULL,'18.54830550124849','73.8996762875464',8,'','020-66822187','The Beauty Spa'),
+ (277,8,'Pragati Book Centre','P-635, Narasinha Chimtamani Kalker Road, Narayan Peth, Pune, Maharashtra 411002, India','2015-01-26 20:14:56',NULL,NULL,'18.516986381101702','73.8552589062597',10,'','020-66828053','The Book Store'),
+ (278,8,'Kirti Book Agency','Sidharth Nagar Society Road, Phase 1, Siddarth Nagar, Aundh, Pune, Maharashtra 411027, India','2015-01-26 20:18:19',NULL,NULL,'18.564937694025282','73.8127217534926',6,'','020 2589 7455','The Book Store'),
+ (279,8,'Jay Matadi Books','69/11, Shri Mhalsakant Vidyalaya Road, Bijali Nagar, Ganga Nagar, Akurdi, Pimpri-Chinchwad, Maharashtra 411035, India','2015-01-26 20:21:36',NULL,NULL,'18.64966902961876','73.7796849850561',6,'','020-66491470','The Book Store'),
+ (280,8,'Ganesh Book Stores','NDA Road, Shivane, Pune, Maharashtra 411023, India','2015-01-26 20:23:17',NULL,NULL,'18.461052164157607','73.7728225532915',3,'','020-66491326','The Book store'),
+ (281,8,'Venkatesh Book Depot','644, Narsinha Chintamani Kelkar Road, Narayan Peth, Pune, Maharashtra 411030, India','2015-01-26 20:24:27',NULL,NULL,'18.51639377956542','73.8530340138819',4,'','020-40419965','The Book Store'),
+ (282,8,'Crossword Book Stores','16B, Paschimanagri, Kothrud, Pune, Maharashtra, India','2015-01-27 00:04:59',NULL,NULL,'18.49932572030523','73.8210091087963',9,'','020-25469364','The Book Store'),
+ (283,8,'Hindustan Bookstall','1923, Blundell Road, Camp, Pune, Maharashtra 411001, India','2015-01-27 00:08:50',NULL,NULL,'18.51282858944854','73.8769774232056',8,'','020-26340572','The Book Store'),
+ (284,8,'Rasik Sahitya Pvt Ltd','652, Shreemant Thorle Bajirav Peshve Road, Narayan Peth, Pune, Maharashtra 411030, India','2015-01-27 00:11:37',NULL,NULL,'18.516148345280804','73.8537280354645',8,'','9823054520','The Book Store'),
+ (285,8,'Popular Book House','759/54, Fergusson College Road, Deccan Gymkhana, Pune, Maharashtra 411004, India','2015-01-27 00:14:37',NULL,NULL,'18.5160974780275','73.8418753538277',9,'','9822088937','The Book Store'),
+ (286,8,'Sharp Book Centre','634, Narasinha Chimtamani Kalker Road, Narayan Peth, Pune, Maharashtra 411002, India','2015-01-27 00:17:37',NULL,NULL,'18.516953317550744','73.8553889933970',10,'','020-66017904','The Book Store'),
+ (287,8,'Aksharadhara Book Gallery','652-667, Shreemant Thorle Bajirav Peshve Road, Narayan Peth, Pune, Maharashtra 411002, India','2015-01-27 00:19:34',NULL,NULL,'18.51593731672893','73.8540183845905',7,'','020-24441003','The Book Store'),
+ (288,9,'Hotel Executive Residency','A Lane, Vasani Nagar, Koregaon Park, Pune, Maharashtra 411001, India','2015-01-27 00:30:42',NULL,NULL,'18.541013061123394','73.887777337804',7,'','020-2611 9097','Contemporary Hotel Located In The Heart Of Koregaon Park.'),
+ (289,9,'Mezza Nine','Mann Road, Phase 1, Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Maharashtra 411057, India','2015-01-27 00:34:30',NULL,NULL,'18.593630198606803','73.7301392201330',7,'','020-66823473','Banquet Hall for Celebrations.'),
+ (290,9,'Gulmohor Banquet Hall','60/3B, Wadgaon Budruk, Narhe, Pune, Maharashtra 411041, India','2015-01-27 00:36:24',NULL,NULL,'18.46285343428958','73.8166813645508',5,'','020-66827574','Banquet Hall for Celebrations.'),
+ (291,9,'Hotel Utsav Deluxe','Marketyard Road, Market Yard, Maharshi Nagar, Pune, Maharashtra 411037, India','2015-01-27 00:39:54',NULL,NULL,'18.489437142149328','73.8638104591515',8,'','020-66822326','Banquet Hall for Celebrations.'),
+ (292,9,'Hotel Aurora Towers','119, National Highway 9, Camp, Pune, Maharashtra 411001, India','2015-01-27 00:41:07',NULL,NULL,'18.518123890530237','73.8787577394392',10,'','020-26131818','Banquet Hall for Celebrations.'),
+ (293,9,'Hotel Hindusthan International','33-1-2, Sakore Nagar, Viman Nagar, Pune, Maharashtra 411014, India','2015-01-27 00:42:31',NULL,NULL,'18.560931088250108','73.9147563371803',6,'','020-66283535','Banquet Hall for Celebrations.'),
+ (294,9,'Mahesh Sanskrutik Bhavan','61, Kasat Nagar, Kondhwa Budruk, Pune, Maharashtra 411046, India','2015-01-27 00:43:30',NULL,NULL,'18.459593070608253','73.8753862027075',9,'','020-41547300','Banquet Hall for Celebrations.'),
+ (295,9,'Royal Orchid Central','Kalyani Nagar Bus Stop, East Avenue, Marigold Premises, Kalyani Nagar, Pune, Maharashtra 411014, India','2015-01-27 00:47:42',NULL,NULL,'18.546405956473222','73.9065326843407',7,'','020-40003000','Banquet Hall for Celebrations.'),
+ (296,9,'Yash Lawns','Sitaram Thakare Road, Ramyanagari Housing Society, Maharshi Nagar, Pune, Maharashtra 411037, India','2015-01-27 00:50:03',NULL,NULL,'18.479567708538312','73.8639928493645',6,'','020-66827295','Banquet Hall for Celebrations.'),
+ (297,9,'Saffron Exotic Restaurant','3, Bhagwan Tatyasaheb Kawade Road, Punya Nagari, Ghorpadi, Pune, Maharashtra 411001, India','2015-01-27 00:52:04',NULL,NULL,'18.5241095198106','73.9052351657297',7,'','020-65277070','Banquet Hall for Celebrations.'),
+ (298,9,'Zambre Palace','2/75, SS Dhage Road, Mukund Nagar, Pune, Maharashtra 411037, India','2015-01-27 00:53:51',NULL,NULL,'18.4933614815792','73.8619107846167',8,'','020-24268595','Banquet Hall for Celebrations.'),
+ (299,9,'Mapple Adhwryou Hotel','Domkhel Road, Wageshwar Nagar, Kalubai Nagar, Wagholi, Pune, Maharashtra 412207, India','2015-01-27 00:55:34',NULL,NULL,'18.579306796230178','73.9823359344151',7,'','020-65005122','Banquet Hall for Celebrations.'),
+ (300,10,'Ican travel and holidays','134, Wakad Road, Omkar Society, Pimple Nilakh, Pimpri-Chinchwad, Maharashtra 411027, India','2015-01-27 01:04:46',NULL,NULL,'18.58833158964258','73.7822558823969',7,'','9595150577','Bus Ticket Agent'),
+ (301,10,'Tej Travels','9, Samarth Road, Madhusanchay Society, Tejonidhi Housing Society, Ganesh Nagar, Karvenagar, Pune, Maharashtra 411052, India','2015-01-27 01:06:16',NULL,NULL,'18.492349721578684','73.8248728308823',7,'','09423005227','Bus Ticket Agent'),
+ (302,10,'Om Tours And Travels','P18, Azad Nagar, Kothrud, Pune, Maharashtra 411058, India','2015-01-27 01:08:50',NULL,NULL,'18.503213737942414','73.8059818743386',7,'','020-41538018','Bus Ticket Agent'),
+ (303,10,'Konduskar Tours and Travels','4, Paud Road, Shivthirth Nagar, Kothrud, Pune, Maharashtra 411038, India','2015-01-27 01:11:45',NULL,NULL,'18.508282180756222','73.8093770388510',8,'','020-24442133','Bus Ticketing.'),
+ (304,10,'Neeta Tours And Travels','265, Baner Road, Varsha Park Society, Pashan, Pune, Maharashtra 411045, India','2015-01-27 01:17:25',NULL,NULL,'18.55389191369926','73.8016569707519',7,'','9371954803','Bus Ticketing.'),
+ (305,11,'Durga','Cummins Circle, Dahanukar Colony, Kothrud, Pune, Maharashtra 411038, India','2015-01-27 13:25:33',NULL,NULL,'18.495732830283735','73.8114651385691',8,'','9958426755','Coffee Shop'),
+ (306,11,'Cafe Coffee Day','16, Pashan Road, Bawdhan Nagar, Bavdhan, Pune, Maharashtra 411021, India','2015-01-27 13:49:01',NULL,NULL,'18.508214213325278','73.7828620616343',7,'','020-41527683','The Coffee Shop'),
+ (307,11,'Barista Cafe','1228 A, Fergusson College Road, Shivajinagar, Pune, Maharashtra 411004, India','2015-01-27 13:51:44',NULL,NULL,'18.519146307308592','73.8414884451773',7,'','020-41203287','The Coffee Shop'),
+ (308,11,'Starbucks Coffee','B3, North Main Road, Vasani Nagar, Koregaon Park, Pune, Maharashtra 411001, India','2015-01-27 14:01:15',NULL,NULL,'18.53933079273658','73.8869076315310',9,'','020-65296888','The Coffee Shop'),
+ (309,11,'Cafe Coffee Day','Fergusson College Girls Hostel Lane, Fergusson College Campus, Deccan Gymkhana, Pune, Maharashtra 411004, India','2015-01-27 14:03:37',NULL,NULL,'18.522665737152586','73.8396275043032',6,'','09326843611','The Coffee Shop'),
+ (310,11,'Starbucks Coffee','Phoenix Boundary Road, Sakore Nagar, Viman Nagar, Pune, Maharashtra 411014, India','2015-01-27 14:05:32',NULL,NULL,'18.562781525042716','73.9169651363041',8,'','020-65001295','The Coffee Shop'),
+ (311,11,'Barista Coffee','18-H, Gen Vaidya Marg, Camp, Pune, Maharashtra 411001, India','2015-01-27 14:08:23',NULL,NULL,'18.528037029503846','73.8841736313770',9,'','020-26810055','The Coffee Shop'),
+ (312,11,'Nescafe','VIM Private Road, Kapil Nagar, Kondhwa, Pune, Maharashtra 411048, India','2015-01-27 14:11:42',NULL,NULL,'18.459905371099758','73.885373407974',4,'','020-40427768','The Coffee Shop'),
+ (313,11,'Cafe Cream','Baner Road, Baner, Pune, Maharashtra 411045, India','2015-01-27 14:13:22',NULL,NULL,'18.558248523156944','73.7926420662548',7,'','09921900991','The Coffee Shop'),
+ (314,14,'Sacred Heart Church','T-4, Loop Road, Mahindra Society, Yerawada, Pune, Maharashtra 411006, India','2015-01-27 14:23:53',NULL,NULL,'18.55290488040724','73.8938250485804',8,'','020-26683128','The Church'),
+ (315,14,'St Francis De Sales Church','Samrat Ashok Road, Aga Nagar, Wadgaon Sheri, Pune, Maharashtra 411014, India','2015-01-27 14:26:04',NULL,NULL,'18.562294259624775','73.9261460304987',9,'','020-27032403','The Church'),
+ (316,14,'Christ The King Church','12, Sainikwadi, Wadgaon Sheri, Pune, Maharashtra 411014, India','2015-01-27 14:28:10',NULL,NULL,'18.553275495337576','73.9151243213564',7,'','','The Church'),
+ (317,14,'Good News Herald Family Church','1, Yerawada, Pune, Maharashtra 411006, India','2015-01-27 14:31:07',NULL,NULL,'18.558330526364003','73.886022502556',10,'','9890236843','The Church'),
+ (318,14,'ST Patricks Cathedral','1B, Bhairoba Nala Road, Camp, Pune, Maharashtra 411001, India','2015-01-27 14:32:40',NULL,NULL,'18.509481506504798','73.8990646600495',9,'','020-26360575','The Church'),
+ (319,14,'ST Ignatius Church','Khadki Railway Station Road, Khadki, Pune, Maharashtra 411003, India','2015-01-27 14:33:45',NULL,NULL,'18.55683920606908','73.8518940750506',6,'','020-25817179','The Church'),
+ (320,14,'ST Pauls Church','Lane G, Iricen Railway Colony, Koregaon Park, Pune, Maharashtra 411001, India','2015-01-27 14:35:44',NULL,NULL,'18.530070435772036','73.8952469819923',7,'','020-26120757','The Church'),
+ (321,14,'Methodist Tamil Church Khadki','6, Elphinston Road, Shree Satyam Housing Society, Khadki, Pune, Maharashtra 411003, India','2015-01-27 14:36:51',NULL,NULL,'18.558337518883697','73.8547117356207',7,'','8793228017','The Church'),
+ (322,14,'Church Of Christ','407, Bootee Street, Sadar Bazaar, Pune, Maharashtra 411001, India','2015-01-27 14:38:42',NULL,NULL,'18.51654638101564','73.8721836451437',8,'','020-26813879','The Church'),
+ (323,15,'Jai Hind Collections','605, Laxmi Road, Perugate, Sadashiv Peth, Pune, Maharashtra 411030, India','2015-01-27 14:44:06',NULL,NULL,'18.514518686964692','73.8523922860622',7,'','020-24436600','The Clothing Shop'),
+ (324,15,'Vama','127, Laxmi Road, Sanewadi, Aundh, Pune, Maharashtra 411007, India','2015-01-27 15:25:05',NULL,NULL,'18.553530411829485','73.8081190828230',7,'','','Women Clothing'),
+ (325,15,'Levies','1093, Indraprastha Road, Model Colony, Shivajinagar, Pune, Maharashtra 411016, India','2015-01-27 15:30:10',NULL,NULL,'18.530719219767523','73.8360261905472',8,'','','Clothing Store'),
+ (326,16,'Modern College','Modern Engineering College Road, Shivajinagar, Pune, Maharashtra 411005, India','2015-01-27 15:32:31',NULL,NULL,'18.525633551929925','73.84579540230',10,'','020-25533638','College Located near FC Road'),
+ (327,16,'Garware College of Arts Science and Commerce','848, Warje Malwadi Road, Khilarewadi, Erandwane, Pune, Maharashtra 411004, India','2015-01-27 15:34:16',NULL,NULL,'18.511790874354453','73.8390704337504',5,'','','College near Karve Road'),
+ (328,16,'KSJC','36, Pandurang Colony, Erandwane, Pune, Maharashtra 411038, India','2015-01-27 15:36:43',NULL,NULL,'18.50209441988056','73.8269750121977',7,'','','college near ganeshnagar'),
+ (329,17,'Big Bazaar','39, Gulawani Maharaj Road, Bharatkunj - 1, Kothrud, Pune, Maharashtra, India','2015-01-27 15:39:27',NULL,NULL,'18.49939439782283','73.8217198941853',6,'','093254 01243','Food Mall'),
+ (330,17,'D-Mart','Baner Road, Laxman Nagar, Baner, Pune, Maharashtra 411045, India','2015-01-27 15:40:57',NULL,NULL,'18.566966705511202','73.7697118613865',8,'','','Food Mall'),
+ (331,18,'Dr. Batra','13, Vishrantwadi Airport Road, MLS Colony, Tingre Nagar, Pune, Maharashtra 411032, India','2015-01-27 15:44:38',NULL,NULL,'18.57725809548889','73.901605605715',6,'','','Health Clinic'),
+ (332,18,'Dr. Yashwant Tawde','283/1, Mudaliar Road, Somwar Peth, Pune, Maharashtra 411011, India','2015-01-27 15:47:58',NULL,NULL,'18.519816125891154','73.8684678076788',6,'','','MBBS'),
+ (333,19,'Ambulance Service','1205/10, Jangali Maharaj Road, Shivajinagar, Pune, Maharashtra 411004, India','2015-01-27 15:50:55',NULL,NULL,'18.52076384972426','73.8474295381453',5,'','102','Ambulance 24*7'),
+ (334,19,'Fire Station','4/31, Pandurang Colony, Erandwane, Pune, Maharashtra 411004, India','2015-01-27 15:54:13',NULL,NULL,'18.506940853001424','73.8295173637743',7,'','101','Fire Station'),
+ (335,19,'Police Station','B/2, Elphinston Road, Kohinoor Estate, Wakadewadi, Shivajinagar, Pune, Maharashtra 411003, India','2015-01-27 15:59:11',NULL,NULL,'18.545367112082598','73.8542222974865',8,'','100','Police Station'),
+ (336,20,'Croma','114, National Highway 9, Lakshmi Nagar, Wanowrie, Pune, Maharashtra 411013, India','2015-01-27 16:03:13',NULL,NULL,'18.506663884461066','73.9077906403687',8,'','1800 258 3636','Electronic Showroom'),
+ (337,20,'Vijay Sales','128/1, Paud Road, Gurha Slathia, Ideal Colony, Kothrud, Pune, Maharashtra 411038, India','2015-01-27 16:05:35',NULL,NULL,'18.5102266595634','73.8184690568592',7,'','020-67201700','Electronic Mall'),
+ (338,20,'Mahaveer Electronics','Bungalow No.62, Fakhri Hills, Next to Kubera Park, Kondhwa Road, Fakhri Society, Kondhwa, Pune, Maharashtra 411048, India','2015-01-27 16:08:41',NULL,NULL,'18.480115919320138','73.8908833358433',6,'','020-26836034','Electronic Mall'),
+ (339,20,'Reliance Digital','Amanora Town Centre, Amanora Park Town, Hadapsar, Pune, Maharashtra 411028, India','2015-01-27 16:12:07',NULL,NULL,'18.518300016245792','73.9346335176375',1,'','020-67260128','Electronic Gadget Showroom'),
+ (340,21,'Balgandharva Rangmandir','Balgandharv Rangmandir, Jangali Maharaj Road, Shivajinagar, Pune, Maharashtra 411004, India','2015-01-27 16:15:06',NULL,NULL,'18.522338777072765','73.8477192167189',7,'','','Plays & Drama'),
+ (341,21,'Ganesh Kala Krida Mandir','1013, Shankar Sheth Road, Dadawadi, Shukrawar Peth, Pune, Maharashtra 411042, India','2015-01-27 16:18:25',NULL,NULL,'18.50160096636926','73.8568003568798',9,'','020-24447712','Plays & Drama'),
+ (342,21,'Tilak Smarak Mandir','Tilak Smarak Road, Lokamanya Nagar, Sadashiv Peth, Pune, Maharashtra 411030, India','2015-01-27 16:20:22',NULL,NULL,'18.508285360105805','73.8488786015656',6,'','','Plays & Drama'),
+ (343,23,'Lifestyle Furniture and Interiors','846, Fergusson College Campus, Shivajinagar, Pune, Maharashtra 411004, India','2015-01-27 16:26:36',NULL,NULL,'18.520955523969874','73.8368821143194',6,'','','Furniture Shop'),
+ (344,23,'Dreams Interior and Furniture','449, Mudaliar Road, Somwar Peth, Pune, Maharashtra 411011, India','2015-01-27 23:28:10',NULL,NULL,'18.520061413575544','73.8657200336001',7,'','','Furniture Store'),
+ (345,23,'Nirmitee Interiors and Furnitures','41, Prabhat Road, Apex Colony, Erandwane, Pune, Maharashtra 411004, India','2015-01-27 23:30:33',NULL,NULL,'18.512165684322667','73.8313889502876',7,'','','Furniture Store'),
+ (346,23,'Tangent','Pinnac Gangotri Road, Ward No. 8, Wireless Colony, Aundh, Pune, Maharashtra 411007, India','2015-01-27 23:33:02',NULL,NULL,'18.5665353895242','73.8052952286670',7,'','','Furniture Store'),
+ (348,24,'Sai Gas Station','6, National Highway 4, Atul Nagar, Warje, Pune, Maharashtra 411058, India','2015-01-27 23:41:14',NULL,NULL,'18.49262883344558','73.7862443938502',9,'','','LPG Filling Station'),
+ (349,24,'Indane','Unnamed Road, Matoba Nagar, Kothrud, Pune, Maharashtra 411038, India','2015-01-27 23:43:29',NULL,NULL,'18.515418968908484','73.79860401233',8,'','','The Gas Filling Station'),
+ (350,24,'Sigh Motor Mechs','Saint Gyaneshwar Road, Kusmade Colony, Kalas, Pune, Maharashtra 411015, India','2015-01-27 23:45:34',NULL,NULL,'18.59092577310278','73.8768863680888',1,'','','The Gas Filling Station'),
+ (351,26,'Deccan Gymkhana','75/77, Fergusson College Road, Deccan Gymkhana, Pune, Maharashtra 411004, India','2015-01-27 23:49:59',NULL,NULL,'18.517560541361792','73.8416500482704',9,'','','Health Care'),
+ (352,26,'5 Fitness Club','34, Vimalabai Jadhav Road, Narveer Tanaji Wadi, Shivajinagar, Pune, Maharashtra 411005, India','2015-01-27 23:51:43',NULL,NULL,'18.53234682674498','73.8466691969006',7,'','','Health Club'),
+ (353,26,'SunSai Sports & Fitness','990, Khadakmal Ali Road, Dadawadi, Shukrawar Peth, Pune, Maharashtra 411042, India','2015-01-27 23:53:32',NULL,NULL,'18.50429968186055','73.8547365460541',10,'','','Health Club'),
+ (354,26,'Cyclone Fitness Club','990, Khadakmal Ali Road, Dadawadi, Shukrawar Peth, Pune, Maharashtra 411042, India','2015-01-27 23:54:56',NULL,NULL,'18.50429968186055','73.8547365460541',9,'','','The Fitness Club'),
+ (355,26,'Empower Gym & Fitness Club','63/2, Salunke Vihar Road, Kubera Colony, Mohammed Wadi, Pune, Maharashtra 411048, India','2015-01-27 23:56:25',NULL,NULL,'18.481504881706893','73.8987388554957',6,'','','The Fitness Club'),
+ (356,28,'Sancheti Hospital','16, Narveer Tanaji Wadi, Shivajinagar, Pune, Maharashtra 411005, India','2015-01-27 23:58:41',NULL,NULL,'18.529994484932093','73.853036025538',10,'','','Hospital'),
+ (357,28,'Deenanath Mangeshkar','Deenanath Mangeshkar Hospital Road, Laxminarayan Nagar, Vakil Nagar, Erandwane, Pune, Maharashtra 411004, India','2015-01-28 00:00:07',NULL,NULL,'18.502118583804727','73.8322433922439',9,'','','Hospital'),
+ (358,28,'Ruby Hall Clinic','Chatrapati Shahu Maharaj Road, Sangamvadi, Pune, Maharashtra 411001, India','2015-01-28 00:03:26',NULL,NULL,'18.53359174176085','73.8772106263786',7,'','','Hospital'),
+ (359,29,'Sonali Plywood And Hardware','5-1, Bhosale Nagar, Hadapsar, Pune, Maharashtra 411028, India','2015-01-28 00:10:46',NULL,NULL,'18.50276465839681','73.9322020858526',9,'','020-41536812','The Plywood And Hardware Store'),
+ (360,29,'Phoenix Enterprises','20, Gokhalenagar, Pune, Maharashtra 411016, India','2015-01-28 00:12:43',NULL,NULL,'18.525435189388514','73.827242553234',8,'','020-40415296','The Hardware Shop'),
+ (361,29,'Premier Hardware','72, Sankar Nanasaheb Karpe Road, Bodke Wada, Nana Peth, Ganesh Peth, Pune, Maharashtra 411002, India','2015-01-28 00:14:54',NULL,NULL,'18.51398902590346','73.864704966545',6,'','020-66824394','The Hardware Shop'),
+ (362,30,'Jeevana Ayurvedic Center','Road Number 12, Jogger\'s Park, Nilanjali Society, Kalyani Nagar, Pune, Maharashtra 411006, India','2015-01-28 00:17:08',NULL,NULL,'18.549196152812172','73.9033126831054',9,'','7304230431','The Health Care Shop'),
+ (363,30,'Chetana Counselling Center','15, Fatima Nagar, Wanowrie, Pune, Maharashtra 411040, India','2015-01-28 00:19:28',NULL,NULL,'18.503286723534597','73.9005332440137',5,'','020-67288679','The Health Care Shop'),
+ (364,30,'Herbalife International','15, Udyog Nagar, Chinchwad, Pimpri-Chinchwad, Maharashtra 411033, India','2015-01-28 00:24:43',NULL,NULL,'18.63679587416423','73.7846732139587',7,'','020-40418488','The Health Care Shop'),
+ (365,32,'JW Marriott','Senapati Bapat Road, 30, Laxmi Society, Model Colony, Gokhalenagar, Pune, Maharashtra 411016, India','2015-01-28 00:26:21',NULL,NULL,'18.53246451653755','73.8295257836580',8,'','020 6683 3333','5 Star Hotel'),
+ (366,32,'Le Méridien','564, Raja Bahadur Mill Road, Sangamvadi, Pune, Maharashtra 411001, India','2015-01-28 00:28:23',NULL,NULL,'18.530159163057608','73.871186524629',5,'','020 2605 0505','The 3 Star Hotel'),
+ (367,32,'Royal Orchid Central','Kalyani Nagar Bus Stop, East Avenue, Marigold Premises, Kalyani Nagar, Pune, Maharashtra 411014, India','2015-01-28 00:30:20',NULL,NULL,'18.546406601028647','73.9065340161323',7,'','020 4000 3000','The 3 Star Hotel'),
+ (368,33,'Iskcon temple','Church Road, Shivkirti Govt Officers Colony, Ghorpadi, Pune, Maharashtra 411001, India','2015-01-28 00:33:34',NULL,NULL,'18.527794013553027','73.8912963867187',7,'','','The Hindu Temple'),
+ (369,33,'Vimla Jeevan Jhulelal Hindu Temple','Kedari Nagar Road, Oxford Village, Kedari Nagar, Wanowrie, Pune, Maharashtra 411040, India','2015-01-28 00:35:18',NULL,NULL,'18.484996325961543','73.904533758759',8,'','020-26854466','The Hindu Temple'),
+ (370,35,'Kalyaniee Cards','410-412, Kakasaheb Gadgil Road, Hasabnis Bakhal, Narayan Peth, Pune, Maharashtra 411030, India','2015-01-28 00:39:48',NULL,NULL,'18.51687956920633','73.8519282639026',7,'','020-66285991','The Invitation Cards'),
+ (371,35,'Durga Graphics','374, Ram Shastri Prabhune Road, Narayan Peth, Pune, Maharashtra 411030, India','2015-01-28 00:43:21',NULL,NULL,'18.517238181380076','73.850881531834',8,'','020-66829437','The Invitation Card Printers'),
+ (372,36,'P N Gadgil Jewellers','128/1, Paud Road, Gurha Slathia, Ideal Colony, Kothrud, Pune, Maharashtra 411038, India','2015-01-28 00:45:14',NULL,NULL,'18.510276265668328','73.8190564513206',9,'','020-67288727','The Jewellery Showrooms'),
+ (373,36,'Krishna Rajaram Ashtekar','371, Kasba Peth Road, Phadke Haud, Kasba Peth, Pune, Maharashtra 411002, India','2015-01-28 00:48:11',NULL,NULL,'18.519655614751326','73.86108398437',9,'','020-40418036','The Jewellery Showroom'),
+ (374,36,'Tanishq Showroom','652-667, Shreemant Thorle Bajirav Peshve Road, Narayan Peth, Pune, Maharashtra 411002, India','2015-01-28 00:50:37',NULL,NULL,'18.515993208941744','73.8539600372314',9,'','020-40415051','The Jewellery Showrooms'),
+ (375,37,'Delux Dry Cleaner','21/2, Warje Malwadi Road, Khilarewadi, Erandwane, Pune, Maharashtra 411004, India','2015-01-28 00:53:31',NULL,NULL,'18.510746803192156','73.835743814706',9,'','','The Dry Cleaners'),
+ (376,37,'Safaai Laundry Service','Mahalaxmi Road, Ward No. 8, Wireless Colony, Aundh, Pune, Maharashtra 411007, India','2015-01-28 00:55:26',NULL,NULL,'18.565600693908824','73.8020606338977',6,'','8856814404','The Laundry Service'),
+ (377,37,'The Laundry Shop','Shrikant Thakare Path, Gananjay Society, Chaitanya Nagar, Kothrud, Pune, Maharashtra 411058, India','2015-01-28 00:56:53',NULL,NULL,'18.497005303120826','73.8021779805421',9,'','020-25305056','The Laundry Shop'),
+ (378,38,'The British Library','Professor Keshav Ramchandra Kanitkar Path, Deccan Gymkhana, Pune, Maharashtra 411004, India','2015-01-28 00:58:21',NULL,NULL,'18.520851602163617','73.8407649099826',10,'','020 4100 5310','Library'),
+ (379,38,'Maahis Institute','5, South Main Road, Iricen Railway Colony, Koregaon Park, Pune, Maharashtra 411001, India','2015-01-28 00:59:45',NULL,NULL,'18.53295343058473','73.8958849757909',8,'','8806195333','Library'),
+ (380,38,'Unnati Books & Toys Library','6, Mont Vert Internal Road, Pashan, Pune, Maharashtra 411021, India','2015-01-28 01:01:29',NULL,NULL,'18.544891018695598','73.7800289690494',5,'','99671 94010','Library'),
+ (381,39,'Dorabjee\'s','232, New Airport Road, Sanjay Park, Pune, Maharashtra 411006, India','2015-01-28 01:04:24',NULL,NULL,'18.568548843453687','73.9075646549463',9,'','','The Liquor Store'),
+ (382,39,'The Liquor Store','Aundh Road, Chikkalvadi, Bopodi, Pune, Maharashtra 411020, India','2015-01-28 01:06:45',NULL,NULL,'18.56243573064996','73.8340044021606',7,'','8800557695','The Liquor Store'),
+ (383,40,'Rajhans Lodge','519, Siddhivinayak Road, Somwar Peth, Pune, Maharashtra 411011, India','2015-01-28 01:11:06',NULL,NULL,'18.520035839194776','73.8631231337785',8,'','8983979090','Lodge'),
+ (384,40,'Hotel Span Executive','1170-31-4, Revenue Colony, Shivajinagar, Pune, Maharashtra 411005, India','2015-01-28 01:12:22',NULL,NULL,'18.527097178318794','73.8483367860317',7,'','020-40424207','Lodging'),
+ (385,40,'Magnus Service Apartments','Grant Road, Tulaja Bhawani Nagar, Kharadi, Pune, Maharashtra 411014, India','2015-01-28 01:14:58',NULL,NULL,'18.560018266865583','73.9575576782226',8,'','020-66827612','Lodging'),
+ (386,41,'jawed habib','302/A, Deccan Gymkhana, Pune, Maharashtra 411004, India','2015-01-28 01:16:29',NULL,NULL,'18.52030670090818','73.8384246826171',9,'','','Mens Salon'),
+ (387,41,'Men\'s Salon','Symbiosis Lavale Road, Maharashtra 412115, India','2015-01-28 01:19:50',NULL,NULL,'18.548013713910176','73.7310209870338',8,'','','Mens Salon'),
+ (388,41,'The Ideal','D/13-1/2, Indrayani Nagar, Range Hill Estate, Pune, Maharashtra 411020, India','2015-01-28 01:22:42',NULL,NULL,'18.54992849796143','73.844261169433',8,'','','Mens Salon');
+/*!40000 ALTER TABLE `domaininfo` ENABLE KEYS */;
+
+
+--
+-- Definition of table `festivals`
+--
+
+DROP TABLE IF EXISTS `festivals`;
+CREATE TABLE `festivals` (
+  `fid` int(10) unsigned NOT NULL auto_increment,
+  `fName` varchar(45) default NULL,
+  `flat` varchar(45) default NULL,
+  `flong` varchar(45) default NULL,
+  `month` varchar(45) default NULL,
+  PRIMARY KEY  (`fid`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `festivals`
+--
+
+/*!40000 ALTER TABLE `festivals` DISABLE KEYS */;
+INSERT INTO `festivals` (`fid`,`fName`,`flat`,`flong`,`month`) VALUES 
+ (1,'Diwali','18.508627466541352 ','73.7918561697006','November');
+/*!40000 ALTER TABLE `festivals` ENABLE KEYS */;
+
+
+--
+-- Definition of table `smsmaneger`
+--
+
+DROP TABLE IF EXISTS `smsmaneger`;
+CREATE TABLE `smsmaneger` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `phoneno` varchar(45) NOT NULL,
+  `msg` varchar(45) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `smsmaneger`
+--
+
+/*!40000 ALTER TABLE `smsmaneger` DISABLE KEYS */;
+INSERT INTO `smsmaneger` (`id`,`phoneno`,`msg`) VALUES 
+ (4,'15555215554','Hi there...'),
+ (3,'15555215556','HiFsdfszdfVsdSadfasd'),
+ (5,'15555215554','Hello...'),
+ (35,'15555215554','Hiiii...'),
+ (36,'15555215554','LOCATION'),
+ (37,'15555215554','LOCATION'),
+ (38,'15555215554','SFS');
+/*!40000 ALTER TABLE `smsmaneger` ENABLE KEYS */;
+
+
+--
+-- Definition of table `trackuser`
+--
+
+DROP TABLE IF EXISTS `trackuser`;
+CREATE TABLE `trackuser` (
+  `userid` int(10) unsigned NOT NULL,
+  `lat` varchar(45) NOT NULL,
+  `longitude` varchar(45) NOT NULL,
+  `cellid` varchar(45) NOT NULL,
+  `lac` varchar(45) NOT NULL,
+  `udate` timestamp NOT NULL default CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `trackuser`
+--
+
+/*!40000 ALTER TABLE `trackuser` DISABLE KEYS */;
+INSERT INTO `trackuser` (`userid`,`lat`,`longitude`,`cellid`,`lac`,`udate`) VALUES 
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-17 13:38:25'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-17 13:42:32'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-17 13:43:07'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-17 13:44:02'),
+ (10,'18.4992907','73.7938519','26446','3126','2012-02-21 20:15:20'),
+ (10,'18.4992907','73.7938519','26446','3126','2012-02-21 20:15:24'),
+ (10,'18.4996664','73.7962779','18441','3126','2012-02-21 20:16:15'),
+ (10,'18.4996664','73.7962779','18441','3126','2012-02-21 20:16:16'),
+ (10,'18.4996664','73.7962779','18441','3126','2012-02-21 20:16:16'),
+ (10,'18.4996664','73.7962779','18441','3126','2012-02-21 20:16:17'),
+ (10,'18.4996664','73.7962779','18441','3126','2012-02-21 20:16:17'),
+ (10,'18.4996664','73.7962779','18441','3126','2012-02-21 20:16:19'),
+ (10,'18.4996664','73.7962779','18441','3126','2012-02-21 20:16:20'),
+ (10,'18.4996664','73.7962779','18441','3126','2012-02-21 20:16:21'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-21 20:16:46'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-21 20:16:47'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-21 20:16:47'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-21 20:16:48'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-21 20:16:48'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-21 20:16:49'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-21 20:16:49'),
+ (10,'18.4992907','73.7938519','18441','3126','2012-02-21 20:16:50'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:02:52'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:03:50'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:03:50'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:03:51'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:03:52'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:03:53'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:03:54'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:03:54'),
+ (10,'18.4992907','73.7938519','18442','3126','2012-02-21 21:05:50'),
+ (10,'18.4993034','73.7938152','18442','3126','2012-03-11 17:35:51'),
+ (10,'18.4993034','73.7938152','18442','3126','2012-03-11 17:36:48'),
+ (10,'18.4993034','73.7938152','26446','3126','2012-03-11 17:37:06'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-04-13 19:42:13'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-04-13 19:44:43'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-04-13 19:47:24'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-04-13 19:47:40'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-04-13 20:13:56'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 14:00:01'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 14:00:06'),
+ (10,'18.4993217','73.7938038','26446','3126','2012-05-04 14:01:18'),
+ (10,'18.4993217','73.7938038','26446','3126','2012-05-04 14:01:21'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 14:01:54'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 14:01:57'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 14:02:10'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 14:02:13'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 14:03:50'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 14:04:14'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 14:04:15'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:02:02'),
+ (10,'18.4993217','73.7938038','26446','3126','2012-05-04 15:20:39'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:26:21'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:26:44'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:28:07'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:28:38'),
+ (10,'18.500832','73.7914346','18442','3126','2012-05-04 15:29:19'),
+ (10,'18.500832','73.7914346','18442','3126','2012-05-04 15:29:20'),
+ (10,'18.500832','73.7914346','18442','3126','2012-05-04 15:29:20'),
+ (10,'18.500832','73.7914346','18442','3126','2012-05-04 15:29:21'),
+ (10,'18.500832','73.7914346','18442','3126','2012-05-04 15:29:22'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:29:22'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:29:23'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:29:23'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:29:23'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:29:24'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:30:14'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:30:53'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:31:46'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 15:32:08'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:33:40'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:34:01'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 15:37:10'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 15:49:53'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 15:49:54'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 21:45:22'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 21:49:13'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 21:49:14'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 21:49:15'),
+ (10,'18.4993217','73.7938038','26446','3126','2012-05-04 21:51:19'),
+ (10,'18.4993217','73.7938038','26446','3126','2012-05-04 21:52:28'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 21:55:07'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 21:56:00'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 22:16:56'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 22:18:17'),
+ (10,'18.4993217','73.7938038','18442','3126','2012-05-04 22:27:37'),
+ (10,'18.4993217','73.7938038','18441','3126','2012-05-04 22:28:09'),
+ (18,'18.50362','73.79537','-1','-1','2012-06-04 01:27:06'),
+ (10,'18.4995411','73.7940143','18441','3126','2012-08-22 20:52:38'),
+ (10,'18.4995411','73.7940143','18442','3126','2012-08-22 20:57:29'),
+ (10,'18.4995416','73.7940145','18442','3126','2012-08-22 21:00:29'),
+ (10,'18.4995416','73.7940146','18441','3126','2012-08-22 21:34:38'),
+ (10,'18.4995417','73.7940147','18442','3126','2012-08-22 21:36:35'),
+ (10,'18.4995409','73.7940149','18442','3126','2012-08-22 21:38:37'),
+ (10,'18.4994064','73.7939476','18441','3126','2012-08-22 21:44:40'),
+ (10,'18.4994054','73.793947','18441','3126','2012-08-22 21:44:59'),
+ (10,'18.4994058','73.7939471','18442','3126','2012-08-22 21:47:17'),
+ (10,'18.4994047','73.7939488','18442','3126','2012-08-22 21:48:15'),
+ (10,'18.4994058','73.7939471','18442','3126','2012-08-22 21:50:59'),
+ (10,'18.4994049','73.7939469','18441','3126','2012-08-22 21:51:23'),
+ (10,'18.4994064','73.7939476','18442','3126','2012-08-22 21:52:15'),
+ (10,'18.4993373','73.7935951','18442','3126','2012-09-21 13:34:40'),
+ (10,'18.5000098','73.7936526','18442','3126','2013-01-04 13:53:31'),
+ (10,'18.5000102','73.7936529','18441','3126','2013-01-04 16:16:33'),
+ (10,'18.5000103','73.7936529','18441','3126','2013-01-04 16:16:38'),
+ (10,'18.5000105','73.7936539','18442','3126','2013-01-04 16:16:41'),
+ (10,'18.5000103','73.7936529','18442','3126','2013-01-04 16:16:42'),
+ (10,'18.5000107','73.793655','18442','3126','2013-01-04 16:17:02'),
+ (18,'37.422005','-122.084095','-1','-1','2013-02-12 19:57:04'),
+ (18,'18.590063333333333','73.77294666666667','-1','-1','2013-02-12 19:59:40'),
+ (18,'37.422005','-122.084095','-1','-1','2013-02-16 16:21:25'),
+ (10,'18.5086336','73.791968','1423','3126','2013-02-16 16:29:34'),
+ (10,'18.5086336','73.791968','1423','3126','2013-02-16 16:30:51'),
+ (10,'18.5086336','73.791968','1423','3126','2013-02-16 16:30:52'),
+ (10,'18.5086336','73.791968','1423','3126','2013-02-16 16:35:39'),
+ (10,'18.5086336','73.791968','1423','3126','2013-02-16 16:36:10'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 16:41:25'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 16:41:32'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 16:41:34'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 16:41:36'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 16:41:37'),
+ (18,'18.590063333333333','73.77294666666667','-1','-1','2013-02-16 17:05:37'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 18:16:27'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 19:36:13'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 19:37:57'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 19:41:22'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 19:43:36'),
+ (10,'18.5080375','73.7925205','58372','3126','2013-02-16 19:46:27'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-16 21:07:49'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-16 21:09:15'),
+ (10,'18.5086321','73.7919725','1423','3126','2013-02-16 21:20:30'),
+ (10,'18.5086321','73.7919725','1423','3126','2013-02-16 21:20:33'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-16 21:40:07'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-16 21:40:09'),
+ (10,'18.5088711','73.7918925','18831','3126','2013-02-16 21:42:19'),
+ (10,'18.5088711','73.7918925','18831','3126','2013-02-16 21:42:26'),
+ (18,'37.422005','-122.084095','-1','-1','2013-02-17 17:20:50'),
+ (10,'18.5086321','73.7919725','1423','3126','2013-02-17 17:30:56'),
+ (10,'18.5086321','73.7919725','1423','3126','2013-02-17 17:31:17'),
+ (10,'18.5083356','73.7922478','58372','3126','2013-02-17 17:32:26'),
+ (10,'18.5083356','73.7922478','58372','3126','2013-02-17 17:32:31'),
+ (10,'18.5083356','73.7922478','58372','3126','2013-02-17 17:32:36'),
+ (10,'18.5083356','73.7922478','58372','3126','2013-02-17 17:32:40'),
+ (10,'18.5083356','73.7922478','58372','3126','2013-02-17 17:32:45'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:34:35'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:35:23'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:35:39'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:35:47'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:36:13'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:36:31'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:37:55'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:38:05'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:38:16'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:38:24'),
+ (10,'18.508039','73.7925231','58372','3126','2013-02-17 17:39:44'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:12'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:15'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:16'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:18'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:20'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:21'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:23'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:25'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:27'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:28'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:30'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:31'),
+ (10,'18.5083356','73.7922478','1423','3126','2013-02-17 17:54:33'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:13:31'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:14:24'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:17:33'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:18:54'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:21:26'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:24:21'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:24:43'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:24:51'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:25:05'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:25:27'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:26:00'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:26:15'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:26:28'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:26:58'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:28:38'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:28:50'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:29:12'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:30:11'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:36:46'),
+ (10,'18.508039','73.7925231','58372','3126','2002-01-01 00:37:47'),
+ (18,'0.0','0.0','-1','-1','2013-02-25 13:04:27'),
+ (18,'0.0','0.0','-1','-1','2013-02-25 13:05:30'),
+ (18,'0.0','0.0','-1','-1','2013-02-25 13:05:40'),
+ (18,'0.0','0.0','-1','-1','2013-02-25 13:07:10'),
+ (18,'37.422005','12.084093333333332','-1','-1','2013-02-25 13:10:08'),
+ (18,'73.422005','18.577769999999997','-1','-1','2013-02-25 13:10:48'),
+ (18,'73.412005','18.57787666666667','-1','-1','2013-02-25 13:11:20'),
+ (20,'18.57787666666667','73.412005','-1','-1','2013-02-25 13:20:15'),
+ (20,'18.57787666666667','73.412005','-1','-1','2013-02-25 13:20:16'),
+ (21,'18.4993639','73.7938454','58372','3126','2013-02-25 13:37:02'),
+ (21,'18.4993632','73.7938454','58372','3126','2013-02-25 13:38:06'),
+ (21,'18.4993635','73.7938456','58372','3126','2013-02-25 13:38:29'),
+ (21,'18.4993642','73.7938455','58372','3126','2013-02-25 13:39:37'),
+ (21,'18.4993651','73.7938451','58372','3126','2013-02-25 13:39:44'),
+ (21,'18.4993644','73.7938486','58372','3126','2013-02-25 13:40:00'),
+ (21,'18.4993639','73.7938455','58372','3126','2013-02-25 13:40:23'),
+ (20,'18.567876666666667','73.56986833333333','-1','-1','2013-02-25 14:54:40'),
+ (20,'18.567876666666667','73.56986833333333','-1','-1','2013-02-25 14:54:41'),
+ (20,'18.567876666666667','73.56986833333333','-1','-1','2013-02-25 14:54:42'),
+ (20,'18.567876666666667','73.56986833333333','-1','-1','2013-02-25 14:54:43'),
+ (20,'18.567876666666667','73.56987666666667','-1','-1','2013-02-25 14:59:25'),
+ (20,'18.567876666666667','73.56977666666667','-1','-1','2013-02-25 15:01:42'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 11:06:03'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 11:06:49'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 11:06:56'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 11:07:08'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 11:07:22'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 11:08:41'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 11:10:51'),
+ (20,'0.0','0.0','-1','-1','2013-02-26 12:12:20'),
+ (20,'0.0','0.0','-1','-1','2013-02-26 12:13:51'),
+ (20,'0.0','0.0','-1','-1','2013-02-26 12:19:25'),
+ (20,'0.0','0.0','-1','-1','2013-02-26 12:30:51'),
+ (20,'0.0','0.0','-1','-1','2013-02-26 12:31:15'),
+ (20,'1.8647521666666668E7','7.368365166666667E7','-1','-1','2013-02-26 12:34:56'),
+ (20,'1.8647521666666668E7','7.368365166666667E7','-1','-1','2013-02-26 12:37:41'),
+ (20,'1.8647521666666668E7','7.368665166666666E7','-1','-1','2013-02-26 12:43:11'),
+ (20,'1.8647521666666668E7','7.368665166666666E7','-1','-1','2013-02-26 12:43:12'),
+ (20,'1.864751E7','7.378435333333333E7','-1','-1','2013-02-26 12:46:49'),
+ (20,'1.864751E7','7.378435333333333E7','-1','-1','2013-02-26 12:46:50'),
+ (20,'1.8647575E7','7.378434999999999E7','-1','-1','2013-02-26 12:48:34'),
+ (20,'1.8647575E7','7.378434999999999E7','-1','-1','2013-02-26 12:48:34'),
+ (20,'18.647575','73.78434999999999','-1','-1','2013-02-26 12:59:20'),
+ (20,'18.647575','73.78434999999999','-1','-1','2013-02-26 13:29:31'),
+ (20,'18.573721666666664','73.77970166666667','-1','-1','2013-02-26 13:46:36'),
+ (20,'18.573691666666665','73.77417166666667','-1','-1','2013-02-26 13:48:38'),
+ (20,'18.573691666666665','73.77457166666666','-1','-1','2013-02-26 13:51:18'),
+ (20,'18.573691666666665','73.77477166666667','-1','-1','2013-02-26 13:51:30'),
+ (20,'18.573691666666665','73.76477166666668','-1','-1','2013-02-26 13:52:55'),
+ (20,'18.573691666666665','73.76477166666668','-1','-1','2013-02-26 14:04:11'),
+ (20,'18.57372666666667','73.77544333333334','-1','-1','2013-02-26 14:08:15'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 14:11:11'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 14:11:11'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 14:11:12'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 14:11:12'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 14:11:12'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 14:11:12'),
+ (21,'0.0','0.0','58372','3126','2013-02-26 14:11:12'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 14:11:49'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 14:11:50'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 14:11:50'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 14:11:50'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 14:11:50'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 14:11:50'),
+ (21,'0.0','0.0','1423','3126','2013-02-26 14:11:51'),
+ (21,'18.4993638','73.7938453','1423','3126','2013-02-26 14:21:33'),
+ (21,'18.5083327','73.7906839','1423','3126','2013-02-26 14:22:20'),
+ (21,'18.4993642','73.7938455','58372','3126','2013-02-26 14:22:28'),
+ (21,'18.4993658','73.7938458','58372','3126','2013-02-26 14:22:36'),
+ (21,'18.4993642','73.7938456','58372','3126','2013-02-26 14:24:46'),
+ (21,'18.4993631','73.7938467','58372','3126','2013-02-26 14:25:35'),
+ (21,'18.4993638','73.7938453','58372','3126','2013-02-26 14:30:47'),
+ (21,'18.4993644','73.7938466','58372','3126','2013-02-26 14:42:48'),
+ (20,'18.57372666666667','73.77544333333334','-1','-1','2013-02-26 15:37:57'),
+ (20,'18.57372666666667','73.77544333333334','-1','-1','2013-02-26 15:48:39'),
+ (21,'18.4993628','73.7938476','1423','3126','2013-02-26 15:59:42'),
+ (21,'18.4993651','73.7938451','1423','3126','2013-02-26 17:50:05'),
+ (21,'18.4993639','73.7938456','1423','3126','2013-02-26 17:51:14'),
+ (21,'18.4993638','73.7938454','58372','3126','2013-02-26 18:40:17'),
+ (21,'18.4993642','73.7938455','58372','3126','2013-02-26 18:43:13'),
+ (21,'18.4993632','73.7938454','58372','3126','2013-02-26 18:43:35'),
+ (21,'18.4993638','73.7938455','58372','3126','2013-02-26 18:45:57'),
+ (21,'18.4993642','73.7938455','58372','3126','2013-02-26 18:46:21'),
+ (21,'18.4993638','73.7938455','58372','3126','2013-02-26 18:48:01'),
+ (20,'18.56140333333333','73.786345','-1','-1','2013-02-27 11:26:32'),
+ (20,'18.56149','73.786695','-1','-1','2013-02-27 11:29:45'),
+ (21,'18.4993641','73.7938451','58372','3126','2013-02-27 11:48:53'),
+ (20,'18.561395','73.78657666666666','-1','-1','2013-02-27 13:38:28'),
+ (20,'18.437545','73.654765','-1','-1','2013-03-02 18:41:57'),
+ (20,'18.508701666666663','73.81249666666666','-1','-1','2013-03-02 18:45:12'),
+ (20,'18.456745','73.645455','-1','-1','2013-03-03 17:01:48'),
+ (20,'18.456745','73.644565','-1','-1','2013-03-03 17:03:06'),
+ (20,'18.456745','73.845645','-1','-1','2013-03-03 17:18:22'),
+ (20,'18.456745','73.845645','-1','-1','2013-03-03 17:23:09'),
+ (20,'18.456745','73.845645','-1','-1','2013-03-03 17:23:16'),
+ (20,'18.768676666666668','73.56778666666668','-1','-1','2013-03-03 17:26:39'),
+ (20,'18.768676666666668','73.56778666666668','-1','-1','2013-03-03 17:26:45'),
+ (20,'18.768676666666668','73.56778666666668','-1','-1','2013-03-03 17:29:11'),
+ (20,'18.768676666666668','73.563455','-1','-1','2013-03-03 17:34:33'),
+ (20,'18.768676666666668','73.863455','-1','-1','2013-03-03 17:36:54'),
+ (20,'18.768676666666668','73.863455','-1','-1','2013-03-03 17:57:32'),
+ (20,'18.968676666666667','73.863455','-1','-1','2013-03-03 19:09:09'),
+ (20,'18.968676666666667','73.863455','-1','-1','2013-03-03 19:13:45'),
+ (20,'18.367555','73.65788666666667','-1','-1','2013-03-05 16:03:30'),
+ (20,'18.367555','73.65788666666667','-1','-1','2013-03-05 16:07:10'),
+ (20,'18.561181666666666','73.81494833333333','-1','-1','2013-03-05 16:11:39'),
+ (20,'18.52037','73.83591666666666','-1','-1','2013-03-19 16:50:10'),
+ (20,'18.573986666666666','73.77429166666667','-1','-1','2013-03-19 16:51:44'),
+ (20,'18.573986666666666','73.77429166666667','-1','-1','2013-03-19 17:05:41'),
+ (20,'18.573986666666666','73.77429166666667','-1','-1','2013-03-19 17:12:58'),
+ (20,'18.51368666666667','73.877925','-1','-1','2013-03-21 10:41:52'),
+ (20,'18.546765','73.45673333333335','-1','-1','2013-03-28 19:49:11'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 20:52:04'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 20:52:13'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 20:52:49'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-24 20:53:52'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-24 20:54:19'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 21:00:02'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 21:00:11'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-24 21:01:05'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 21:06:13'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 21:06:25'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 21:07:16'),
+ (21,'18.513687','73.877922','1423','3126','2013-04-24 21:07:46'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-25 21:47:46'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-25 21:49:46'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-25 21:50:05'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-25 21:55:16'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-25 21:59:24'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-27 18:36:50'),
+ (21,'18.513687','73.877922','58372','3126','2013-04-27 18:40:41');
+/*!40000 ALTER TABLE `trackuser` ENABLE KEYS */;
+
+
+--
+-- Definition of table `useraccount`
+--
+
+DROP TABLE IF EXISTS `useraccount`;
+CREATE TABLE `useraccount` (
+  `userid` int(10) unsigned NOT NULL auto_increment,
+  `password` varchar(45) default NULL,
+  `imei` varchar(45) default NULL,
+  `ipaddress` varchar(45) default NULL,
+  `domainId` int(10) unsigned default '1',
+  `displayName` varchar(45) default NULL,
+  `cellId` varchar(45) default NULL,
+  `lac` varchar(45) default NULL,
+  `lat` varchar(45) default NULL,
+  `longitude` varchar(45) default NULL,
+  `activeFlag` varchar(45) default 'Y',
+  `udate` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  `mailid` varchar(100) default NULL,
+  `phoneno` varchar(45) default NULL,
+  `photourl` varchar(255) default NULL,
+  `fathercontacts` varchar(255) default NULL,
+  `username` varchar(45) default NULL,
+  `adminflag` varchar(45) default 'N',
+  PRIMARY KEY  (`userid`)
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `useraccount`
+--
+
+/*!40000 ALTER TABLE `useraccount` DISABLE KEYS */;
+INSERT INTO `useraccount` (`userid`,`password`,`imei`,`ipaddress`,`domainId`,`displayName`,`cellId`,`lac`,`lat`,`longitude`,`activeFlag`,`udate`,`mailid`,`phoneno`,`photourl`,`fathercontacts`,`username`,`adminflag`) VALUES 
+ (26,'admin','303236393635','192.168.0.111',2,'Admin','58372','3126','18.613687','73.977922','Y','2013-02-25 13:36:58','p@facebook.com','23525345235',NULL,'15555215556,15555215555,15555215554,213123123','admin','Y'),
+ (28,'rajesh','865645025450129',NULL,NULL,'raj',NULL,NULL,NULL,NULL,'Y','2015-03-20 22:31:40','r@f.c',NULL,NULL,NULL,NULL,'N'),
+ (29,'vvv','865645025450129',NULL,NULL,'dvh',NULL,NULL,NULL,NULL,'Y','2015-03-20 22:47:43','ggb',NULL,NULL,NULL,NULL,'N');
+/*!40000 ALTER TABLE `useraccount` ENABLE KEYS */;
+
+
+--
+-- Definition of table `usergeotags`
+--
+
+DROP TABLE IF EXISTS `usergeotags`;
+CREATE TABLE `usergeotags` (
+  `geotagid` int(10) unsigned NOT NULL auto_increment,
+  `geoTagName` varchar(45) NOT NULL,
+  `preference` varchar(45) NOT NULL,
+  `actiondesc` varchar(45) NOT NULL,
+  `lat` varchar(45) NOT NULL,
+  `lng` varchar(45) NOT NULL,
+  `imei` varchar(45) NOT NULL,
+  PRIMARY KEY  (`geotagid`)
+) ENGINE=MyISAM AUTO_INCREMENT=37 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `usergeotags`
+--
+
+/*!40000 ALTER TABLE `usergeotags` DISABLE KEYS */;
+INSERT INTO `usergeotags` (`geotagid`,`geoTagName`,`preference`,`actiondesc`,`lat`,`lng`,`imei`) VALUES 
+ (32,'Aundh','1','Silent','18.560643','73.813572','000000000000000'),
+ (31,'college','1','Silent','18.573935','73.774718','000000000000000'),
+ (26,'MY Home','1','Normal','18.540679','73.784691','000000000000000'),
+ (27,'dghf','0','Normal','18.529368','73.715176','355430046075826'),
+ (28,'my office','1','Silent','18.50847','73.790414','355430046075826'),
+ (29,'egyar','0','Normal','18.50857','73.791077','355430046075826'),
+ (30,'udjfihk','1','Silent','18.508591','73.792192','355430046075826'),
+ (24,'Kranti nagar','0','Normal','18.574149','73.79514','000000000000000'),
+ (25,'Baner road','1','Normal','18.561453','73.786153','000000000000000'),
+ (23,'Bharti college','1','Silent','18.574152','73.774263','000000000000000'),
+ (33,'test','1','Silent','18.510376096034882','73.87443467974663','355430046075826'),
+ (34,'test','0','Normal','18.511538447863543','73.8782300055027','355430046075826'),
+ (35,'new tag','0','Normal','18.50731375714003','73.87910138815641','355430046075826'),
+ (36,'for test','1','Silent','18.508862419797747','73.80276806652546','355430046075826');
+/*!40000 ALTER TABLE `usergeotags` ENABLE KEYS */;
+
+
+
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
