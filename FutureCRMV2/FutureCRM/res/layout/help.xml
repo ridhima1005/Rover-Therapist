@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/placeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Tourist Place"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/placeImageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="154dp"
+        android:background="@drawable/forward" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp" 
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/forward"
+        android:background="@drawable/back1" />
+
+    <ImageView
+        android:id="@+id/placeImageView"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/placeTitle"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@android:drawable/ic_lock_power_off" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/viewonmap"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/evacuationicon"
+        android:background="@drawable/maps"
+        android:paddingLeft="10dp"
+        android:text=""
+        android:textColor="#CC0033"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/evacuationicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/evacuation" />
+
+    <ImageView
+        android:id="@+id/imageViewInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/viewonmap"
+        android:src="@drawable/info_icon" />
+
+    <TextView
+        android:id="@+id/disasterDetailsDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewKM1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageViewInfo"
+        android:gravity="center_vertical|left"
+        android:shadowDy="5"
+     
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#98FF86"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/textViewKM1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageViewInfo"
+        android:layout_toLeftOf="@+id/serverImageView"
+        android:gravity="center_vertical|right"
+        android:shadowDy="5"
+        android:text="Near"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#4565FF"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/serverImageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/disasterDetailsDesc"
+        android:layout_alignRight="@+id/disasterDetailsDesc"
+        android:src="@drawable/server" />
+
+    <ImageView
+        android:id="@+id/imageViewStar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/disasterDetailsDesc"
+        android:layout_toLeftOf="@+id/textViewKM1"
+        android:src="@drawable/star2" />
+
+</RelativeLayout>

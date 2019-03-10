@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".WelcomeActivity" >
+
+    <ImageView
+        android:id="@+id/serverImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/travelexperiences" />
+
+    <TextView
+        android:id="@+id/textViewKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/serverImageView"
+        android:gravity="center_horizontal"
+        android:text="Rover Therapist"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#A1A1FF"
+        android:textSize="35dp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/disasterDetailsDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewKM"
+        android:layout_centerHorizontal="true"
+        android:text="Serach Tourist Places"
+        android:textColor="#FE9899" />
+
+</RelativeLayout>

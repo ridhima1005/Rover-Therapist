@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:fadingEdge="horizontal"
+    android:fadingEdgeLength="@dimen/activity_horizontal_margin"
+    tools:context=".HomeActivity" >
+
+    <TextView
+        android:id="@+id/textViewKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/category"
+        android:background="#CCCCFF"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Near By : "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#020202" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toLeftOf="@+id/progressBar1"
+        android:layout_toRightOf="@+id/textView4"
+        android:drawableBottom="@drawable/borderbot"
+        android:text=" Kilometers"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/disasterDetailsDesc"
+        android:clickable="true"
+        android:drawableBottom="@drawable/borderbot"
+        android:onClick="clickDistance"
+        android:paddingLeft="5dp"
+        android:text=" 1 "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#4565FF"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/textViewKM"
+        android:layout_below="@+id/disasterDetailsDesc"
+        android:layout_toLeftOf="@+id/textView4"
+        android:drawableBottom="@drawable/borderbot"
+        android:drawableLeft="@drawable/borderside"
+        android:gravity="right"
+        android:text="within  "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textView5"
+        android:layout_toRightOf="@+id/imageView2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/tabhead"
+        android:clickable="true"
+        android:gravity="left"
+        android:onClick="clickTypes"
+        android:paddingLeft="10dp"
+        android:text="Attractions"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF" />
+
+    <AutoCompleteTextView
+        android:id="@+id/disasterDetailsDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewKM"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewKM"
+        android:drawableRight="@drawable/search"
+        android:ems="10"
+        android:maxLines="2"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#98FF86" >
+    </AutoCompleteTextView>
+
+    <ImageView
+        android:id="@+id/serverImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/disasterDetailsDesc"
+        android:layout_alignTop="@+id/disasterDetailsDesc"
+        android:src="@drawable/borderside" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/serverImageView"
+        android:src="@drawable/borderside" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewKM"
+        android:layout_below="@+id/textViewKM"
+        android:src="@drawable/borderside" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView2"
+        android:src="@drawable/borderside" />
+
+    <ImageView
+        android:id="@+id/imageViewWeather"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:drawableBottom="@drawable/borderbot"
+        android:src="@drawable/s11n" />
+
+    <TextView
+        android:id="@+id/textViewWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listView1"
+        android:layout_alignLeft="@+id/progressBar1"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_below="@+id/disasterDetailsDesc"
+        android:layout_toLeftOf="@+id/textView2"
+        android:capitalize="words"
+        android:drawableBottom="@drawable/borderbot"
+        android:gravity="center"
+        android:text="Small Text"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#4565FF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewWeather"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/disasterDetailsDesc"
+        android:drawableBottom="@drawable/borderbot"
+        android:gravity="center"
+        android:text="Weather"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
