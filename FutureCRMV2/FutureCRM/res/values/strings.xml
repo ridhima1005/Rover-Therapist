@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Rovertherapist</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_welcome">Rovertherapist</string>
+    <string name="title_activity_hint1">Hint1</string>
+    <string name="title_activity_hint2">Hint2</string>
+    <string name="title_activity_hint3">Hint3</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_search">Search</string>
+    <string name="action_location_found">Location Found</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_get_directions">GetDirections</string>
+    <string name="title_activity_login">LoginActivity</string>
+
+</resources>
