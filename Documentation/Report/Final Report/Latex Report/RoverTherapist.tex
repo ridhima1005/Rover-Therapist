@@ -1,0 +1,1654 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[a4paper,vmargin={1in,1in},hmargin={1.25in,1in}]{geometry}	% Setup of page size,margins
+\usepackage{graphics}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{fancybox}		% For formatting of cover page5
+\usepackage{amsmath}    	% For  mathematical formulae
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}		% For adjusting line spacing 
+\usepackage{pdfpages}
+\usepackage[square, comma, sort&compress,numbers]{natbib} % For customizing citations
+\usepackage[pdftex]{hyperref}	% For having working URLs for references 
+\usepackage{chngcntr,tocloft}
+\counterwithin*{figure}{subsubsection}
+\renewcommand{\thefigure}{%
+      \thesubsubsection.\arabic{figure} %
+      }
+\begin{document}
+\pagenumbering{roman}
+\pagestyle{empty}
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{empty}
+\pagenumbering{gobble}
+%\thisfancypage{cmds1}{cmds2}
+\thisfancyput(-0.0 in, -10.0 in) {\setlength{\unitlength}{1 in}\framebox(6.7,10.2)}
+ 
+\begin{center}
+      
+      \textbf{A PROJECT REPORT}\\
+      \textbf{ON}
+      \vspace{0.2 in}
+       
+			\end{center}
+\vspace{0.1 in}
+	\begin{center}
+		\textbf{ROVER THERAPIST}\\
+	\end{center}
+     \vspace{0.2 in}
+		\begin{center}
+	    SUBMITTED TO THE UNIVERSITY OF PUNE \\
+	    IN PARTIAL FULFILLMENT OF THE REQUIREMENTS\\
+	    FOR THE AWARD OF THE DEGREE \\
+	    \\
+	    OF\\
+	    \\
+	    \textbf{B.E.(INFORMATION TECHNOLOGY)}
+	\end{center}
+	
+	\vspace{0.2 in}
+	
+	\begin{center}
+	   \textbf{SUBMITTED BY}
+	\end{center}
+	\vspace{0.1 in}
+	\begin{center}
+	\textbf{SHUBHAM CHANDAK  47008}\\
+	\textbf{RIDHIMA JOSHI  47020}\\	
+	\textbf{MADHUR LAHOTI  47028}\\
+%	\end{center}
+	
+	 \vspace{0.2 in}
+	%	\begin{center}
+	    UNDER THE GUIDANCE OF \\
+	    \\
+	    \\
+	    \textbf{PROF. C.A.GHUGE}\\
+	    \\
+	    \\
+	    \textbf{DEPARTMENT OF INFORMATION TECHNOLOGY}\\
+	    \\
+	    \textbf{P.E.S's}\\
+	    \textbf{MODERN COLLEGE OF ENGINEERING,}\\
+	    \textbf{SHIVAJINAGAR, PUNE-411005}\\
+	    \\
+	    \textbf{UNIVERSITY OF PUNE}\\
+	    \\
+	    \textbf{*2014-2015*}\\
+	     \end{center}
+
+%---------------------------------------------------------------------------------------------------------
+\newpage
+\pagestyle{empty}
+ %\thispagestyle{empty}
+	\pagenumbering{gobble}
+	\thisfancyput(-0.0 in, -10.0 in) {\setlength{\unitlength}{1 in}\framebox(6.7,10.2)}
+\begin{center}
+      
+      \textbf{A PROJECT REPORT}\\
+      \textbf{ON}
+      \vspace{0.2 in}
+       
+			\end{center}
+\vspace{0.1 in}
+	\begin{center}
+		\textbf{ROVER THERAPIST}\\
+	\end{center}
+     
+	\vspace{0.2 in}
+	
+	\begin{center}
+	   \textbf{SUBMITTED BY}
+	\end{center}
+	\vspace{0.1 in}
+	\begin{center}
+	\textbf{SHUBHAM CHANDAK  47008}\\
+	\textbf{RIDHIMA JOSHI  47020}\\	
+	\textbf{MADHUR LAHOTI  47028}\\
+	\\
+	\textbf{B.E.(INFORMATION TECHNOLOGY)}\\
+	\\
+	\begin{center}
+	UNDER THE GUIDANCE OF\\
+	\\
+	\end{center}
+	\textbf{PROF. C.A GHUGE}\\
+	\\
+	\end{center}
+	
+	\begin{center}
+\includegraphics[width=2.5cm]{modernlogo}
+\end{center}
+	
+
+\textbf {DEPARTMENT OF INFROMATION TECHNOLOGY }\\
+\\
+\textbf {P.E.S's}\\
+\textbf{ Modern College Of Engineering,} \\
+\textbf{Shivajinagar,Pune-5}\\
+\\
+\textbf{UNIVERSITY OF PUNE}\\
+\\
+\textbf{*2014-2015*}\\
+\end{center}
+
+%---------------------------------------------------------------------------------------------------------
+\newpage
+\pagestyle{empty}
+ %\thispagestyle{empty}
+	\pagenumbering{gobble}
+	\thisfancyput(-0.0 in, -10.0 in) {\setlength{\unitlength}{1 in}\framebox(6.7,10.2)}
+
+\vspace{0.2in}
+\begin{center}
+\textbf{\large{Progressive Education Society's}}\\
+\textbf{\large{Modern College of Engineering, Shivajinagar,}}\\
+\textbf{\large{Pune-411005.}}\\
+\\
+\\
+\vspace{0.2in}
+\end{center}
+
+	\begin{center}
+\includegraphics[width=2.5cm]{modernlogo}
+\end{center}
+
+\begin{center}
+\textbf{\large{CERTIFICATE}}\\
+\end{center}
+
+		\noindent
+  				\setlength{\baselineskip}{1.5\baselineskip}
+	\begin{center}
+\begin{flushleft}
+This is to certify that the following students of Final Year Information Technology have successfully completed the project entitled \textbf{\small"ROVER THERAPIST"}in the academic year 2014-2015.\\
+The Group Members name are: Shubham Chandak\\
+							Ridhima Joshi\\
+							Madhur Lahoti\\
+\\
+\end{flushleft} 
+
+\begin{flushleft}
+This is partial fulfillment of Bachelor of Information Technology under the University of Pune,Pune.
+
+\\
+Date:
+\\
+\end{flushleft}
+	\end{center} 
+		\vspace{0.6 in}
+(Prof.Mrs.S.D.Deshpande)\hspace{2.8 in} (Prof. C.A. Ghuge)\\
+HOD of Department\hspace{1 in} External Examiner\hspace{1 in}  (Internal Guide)\\
+(Information Technology)\\\\\
+\singlespace
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagenumbering{roman}
+\addcontentsline{toc}{section}{ACKNOWLEDGMENT}
+\pagestyle{plain}           %For displaying roman page nos
+\begin{center}
+\bf ACKNOWLEDGEMENT
+\end{center}
+\hspace{0.7cm}We take this opportunity to express our sincere thanks to our project guide Prof. C. A. Ghuge and Head of the Department Prof. Mrs. S. D. Deshpande for their valuable time and guidance and for providing all the necessary facilities, which were indispensable in the completion of this project report. 
+
+We are also thankful to all the staff members of the Department of Information Technology of Modern College of Engineering, Pune for their valuable time, support, comments, suggestions and persuasion.
+
+We would also like to thank the institute for providing the required facilities, Internet access and important books.
+  
+We would also like to thank our colleagues and friends for their support and timely suggestions.
+
+\begin{flushright}
+\hspace{3.5in} 
+Shubham Chandak\\
+Ridhima joshi\\	
+Madhur Lahoti\\
+\end{flushright}
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\addcontentsline{toc}{section}{ABSTRACT}
+\pagestyle{plain}           %For displaying roman page nos
+\begin{center}
+\bf ABSTARCT
+\end{center}
+\hspace{0.7cm}Customer Relationship Management (CRM) is currently one of the most used notions in articles and studies dealing with computer applications. Nowadays it is very difficult for a company to convince a customer (a potential client) with only product or price arguments because of the strong competition in almost all market areas. Aim of our project deals with finding tourist attractions, optimal path finding for tourist attraction, suggestions for way of transportation, seasonal classification and calculation of the fare using distance formula calculation. This project also helps the tourist to lodge a complaint against the Tourist Guide’s, Rented vehicle drivers for diverting the tourist and charging him unfair tariff & finding out emergency numbers for the particular city. Based on the complaint lodged by the passenger the reports are generated and submitted to the higher authorities. Whenever user reaches near to the tourist place images of that place pops up on his phone. Tourist will get the places list as per his location and places are fetched from database as well as Google. Seasonal classification of places is also provided i.e. places to be visited in summer season, winter season and rainy season, this feature will suggest user to visit that particular place which must be visited during that season.
+
+%---------------------------------------------------------------------------------------------------------
+\\
+
+\newpage
+{\setlength{\baselineskip}{1.5\baselineskip}
+\tableofcontents
+}
+
+%---------------------------------------------------------------------------------------------------------
+\newpage
+{\setlength{\baselineskip}{1.5\baselineskip}
+\listoftables
+\addcontentsline{toc}{section}{LIST OF TABLES}
+}
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+{\setlength{\baselineskip}{1.5\baselineskip}
+\listoffigures
+\addcontentsline{toc}{section}{LIST OF FIGURES}
+}
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagenumbering{arabic}
+\pagestyle{plain} 
+\begin{center}
+\section{INTRODUCTION}
+\end{center}
+\\
+\subsection{INTRODUCTION}
+\hspace{0.7 cm}Our application is based on mobile CRM concept which will help the user.
+\\
+\subsubsection{PURPOSE}
+\\
+\hspace{0.7 cm}Aim of this project deal with finding tourist attractions, optimal path finding for tourist attraction, suggestions for way of transportation, and if the tourist is opting for Rented Vehicle then calculation of the fare using optimal path distance calculation provided by Google Maps API. This project also helps the tourist to lodge a complaint against the Tourist Guide’s, Vehicle Drivers for Diverting the tourist and charging him unfair tariff & finding out emergency numbers for the particular city.
+\\
+\subsubsection{OVERVIEW}
+\\
+Using this application user can detect source of user and from there he can get nearest tourist places in his area. User also can find the multiple routes, available transport facility and fair calculation. The data found on this app is more than Google. In current scenario some application shows the data which only available  on Google, in these app there is no local places on Google, so we are trying to give the data of local places also which are not much popular on Internet with detail information.  
+\\
+\subsubsection{BUSINESS CONTEXT}
+\\
+\begin{itemize}
+\item Future Mobile Customer Relationship Management in the automotive industry and the tourism. The key profiles of future mobile communication are Interactive Broadband Protocols, Location Based Services and Individualized/Personalized Services mainly based on Multimedia information. These profiles are embedded in a three layer communicate model.
+\\
+\item The grade of customer’s satisfaction is most relevant factor for the breakdown or the success of a company. 
+\\
+\item Aim of this project deal with finding tourist attractions, optimal path finding for tourist attraction, suggestions for way of transportation, and if the tourist is opting for Rented Vehicle then calculation of the fare using optimal path distance calculation provided by Google Maps API.
+\\
+\item This project also helps the tourist to lodge a complaint against the Tourist Guide’s, Rented Vehicle Drivers for diverting the tourist and charging him unfair tariff & finding out emergency numbers for the particular city.
+\end{itemize}
+
+\newpage
+\subsection{PROBLEM STATEMENT}
+\\
+\hspace{0.7 cm}To develop an android application for tourists who are exploring the city. To help the tourists search for places and provide security like lodging complaint against the drivers. To detect the distance of the destination from the source using distance algorithm.
+
+\newpage
+\pagestyle{plain} 
+\begin{center}
+\subsection{PROJECT SCOPE}
+\end{center}
+\\
+\hspace{0.7 cm}This project will aim at developing an android application which will help the user to locate the nearby places. The application will use the Goople API to display the places and distance algorithm to calculate the distance from source to destination.
+\\
+\hspace{0.7 cm}When the user opens the application source of the user will be detected. The user can select the categories which he wants to visit.This will show the places according to the categories selected. The places will also be shown as per the current weather. The algorithm will calculate the fare as per the distance.
+\\
+\hspace{0.7 cm} According to weather places will be suggested to the user also.
+\newpage
+\pagestyle{plain} 
+\begin{center}
+\subsection{PROJECT OBJECTIVES}
+\end{center}
+\\
+\hspace{0.7 cm}Our project aims at delivering an application to the customer where he can use it whenever he visits the city. Project objectives are:
+\begin{itemize}
+\item Detecting the source of the user.
+\\
+\item Listing of tourist places.
+\\
+\item Calculating fare according to the distance.
+\\
+\item Lodge a compliant.
+\\
+\item Show places according to the weather.
+\\
+\item Places are fetched from database as well as Google.
+\\
+\item Places can be sorted as per the categories.
+\end{itemize}
+
+\newpage
+\pagestyle{plain} 
+\begin{center}
+\subsection{ASSUMPTIONS AND DEPENDENCIES}
+\end{center}
+\\
+\hspace{0.7 cm} For the application to run following constraints should be present:-
+\subsubsection{Assumptions}
+\\
+\begin{itemize}
+\item The device on which the application is running should be a android device.
+\item User must have basic knowledge to operate android phone.
+\end{itemize}
+\\
+\\
+\subsubsection{Dependencies}
+\\
+\begin{itemize}
+\item The device should have the facility of GPS.
+\item The device should be connected to the internet.
+\end{itemize}
+
+
+\newpage
+\pagestyle{plain} 
+\begin{center}
+\subsection{LITERATURE SURVEY}
+\end{center}
+\\ 
+\hspace{0.7 cm}Literature survey is the most important step in software development process. Before developing the tool it is necessary to determine the time factor, economy n company strength. Once these things are satisfied, ten next steps are to determine which operating system and language can be used for developing the tool. Once the programmers start building the tool the programmers need lot of external support. This support can be obtained from senior programmers, from book or from websites. Before building the system the above consideration are taken into account for developing the proposed system.
+\\
+\subsubsection{Customer Relationship Management Using Android Phone in Tourism}^{[1]}
+\\
+\textbf{Authors:	Nitin Khondre, Ravi Saini, Ronak Jain, 
+Sarang Suryawanshi, Bushra Quazi
+\\
+Year:		March 2014
+\\
+Journal: 	International Journal of Emerging Technology and Advanced Engineering
+\\
+\textbf{Website: www.ijetae.com (ISSN 2250-2459, ISO 9001:2008 Certified Journal, 
+\\
+Volume 4, Issue 3, March 2014)}
+}
+\\
+\hspace{0.7 cm}Customers are the vital key for each business and company to help them to grow. So, implementing
+CRM important tools that will help managers and companies to increase the satisfaction and loyalty of customers more than before. Nowadays it is very difficult for a company to
+ convince a customer with only product or price arguments because of the strong competition in almost all market areas. Mobile technology offers a high potential to significantly transform the ways how a company can interact
+  with their customers and even with own employees. Therefore, this paper deals with the possibilities and aspects to support CRM via future mobile services.
+\\
+
+\subsubsection{inGuide-Interactive Guide}
+\\
+\textbf{Authors: 	Filipe Andre Gomes Batista, Nuno Rodrigues, and Alexandrino Goncalves
+\\
+Year: 		2009
+\\
+Journal:  3rd IEEE International Conference on Digital Ecosystems and Technologies Future Mobile CRM in Automotive and Tourist Area^{[2]}
+}
+\\
+\hspace{0.7 cm}This paper describes the inGuide modular application which provides a package management system avoiding the need for a different version of the application for each city. It also describes the geolocation technology in order to provide contextual information in a simple and interactive way. This paper describes two modes those are online mode and offline mode. We preferred online mode of GPS tracking as it gives more accurate location.  
+\\
+
+\subsubsection{On-line GPS Track Simplification Algorithm for Mobile Platforms}
+\\
+\textbf{Author:	R. Ivanov
+\\
+	Year:		2010
+\\
+	Journal:	Information Technology and Control^{[3]}
+}
+\\
+\hspace{0.7 cm}This paper describes an algorithm for on-line simplification of the number of points, describing a GPS track. It is offered on the base of analysis of the location of three last points and calculation by basic trigonometric ratios and distance formula.
+\\
+
+\subsubsection{Overview on Android- The New Mobile Operating System}
+\\
+\textbf{Author:	Monika Bazard, Sonia Bhardwaj
+\\
+Year:		April, 2011
+\\
+Journal:	SGI Reflections- International Journal of Science, Technology and Management. ISSN No. 0976-2140. Volume 2, Issue 1, April, 2011^{[4]}
+}
+\\
+\hspace{0.7 cm}This paper describes the Android’s history, architecture, libraries and its advantages and disadvantages in the smart phones.
+\\
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\begin{center}
+\pagestyle{plain} 
+\section{PROJECT PLAN}
+\end{center}
+\hspace{0.7cm}\\
+\pagestyle{plain} 
+\subsection{TASK SHEET SCHEDULE}
+\begin{table}
+\renewcommand{\arraystreatch{1.5}}
+\centering
+\begin{tabular}{|1||c|c|c|c|}
+\hline
+TASK NAME& DURATION OF TASK& DISCUSSION DATE&\\
+\hline
+Search for BE project topics and related papers
+\hline
+Short listing of topics
+\hline
+Presentation of topic to the project coordinator and final selection of topic
+\hline
+Submission of base paper and synopsis& 2 days& 1/09/2014\\
+\hline
+Workshop on latex
+\hline
+Discussion on SRS and implementation of SRS& 2 days& 11/09/2014\\
+\hline
+Corrections in SRS and implementation of UML diagrams& 2 days& 20/09/2014\\
+\hline
+Discussion on literature survey and SRS format& 2 days& 25/09/2014\\
+\hline
+Preparation of Partial report in latex& 8 days& 09/10/2014\\
+\hline
+Partial report submission and signing & 1 days& 17/10/2014\\
+\hline
+Sem VII project viva& 1 days& /10/2014\\
+\hline
+Discussion on what to do in sem VIII& 1 days& 22/12/2014\\
+\hline
+Changes in Admin Module and rough ER& 2 days& 11/01/2015\\
+\hline
+Part of Android application discussed with project guide& 5 days& 19/01/2015\\
+\hline
+Working on database& 15 days& 23/01/2015\\
+\hline
+Completion of Admin module& 15 days& 23/01/2015\\
+\hline
+Review I of project& 1 days& 28/01/2015\\
+\hline
+Discussion on class diagram& 1 days& 23/02/2015\\
+\hline
+Preparation of Final report in latex& 11 days& 11/03/2015\\
+\hline
+Shown Android module& 1 days& 16/03/2015\\
+\hline
+Showed the changes in the project to the project guide & 8 days& 27/03/2015\\
+\hline
+Review II of project& 1 days& 28/03/2015\\
+\hline
+Discussion on some Points of report& 2 days& 30/03/2015\\
+\hline
+Final Report submission signing& 1 days& /04/2015\\
+\hline
+\caption{Task Sheet Schedule}
+\end{tabular}
+\end{table}
+\\
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{plain} 
+\begin{center}
+%srs
+\section{REQUIREMENT ANALYSIS}  
+\end{center}
+\\
+\subsection{HARDWARE REQUIREMENTS}
+\\
+\hspace{0.7 cm} The system requires following hardware requirements:
+\\
+\begin{itemize}
+\item System:	Intel P4, 2.4 GHZ, 40 GB HDD for installation. 
+\\
+\item Memory:	512 MB memory, 256 MB ram 
+\\
+\item Project’s server side system is windows based supporting versions windows XP onwards.  
+
+\end{itemize}
+\\
+\\
+\subsection{SOFTWARE REQUIREMENTS}
+\\
+\begin{itemize}
+\item 	Eclipse 3.7 Indigo
+\item Android SDK
+\item Android 2.3
+\item Android GPS API
+\item Apache Tomcat Server
+\item MySQL
+\end{itemize}
+\\
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{plain} 
+\begin{center}
+\section{PROJECT DESIGN}
+\end{center}
+\hspace{0.7cm}
+\\
+\subsection{E-R DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{er}
+\caption{ER Diagram}
+\end{figure}
+\\
+\newpage
+\subsection{DATA FLOW DIAGRAMS}
+\\
+\subsubsection{DFD LEVEL0}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{level}
+\caption{DFD Level 0}
+\end{figure}
+\\
+\newpage
+\subsubsection{DFD LEVEL1}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{levell}
+\caption{DFD Level 1}
+\end{figure}
+\\
+\newpage
+\subsection{UML DIAGRAMS}
+\\
+\subsubsection{USE CASE DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{UseCase}
+\caption{Use Case Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{CLASS DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{class}
+\caption{Class Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{ACTIVITY DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{activity}
+\caption{Activity Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{PACKAGE DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{package}
+\caption{Package Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{SEQUENCE DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{Seq}
+\caption{Sequence Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{COMMUNICATION DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{communication}
+\caption{Communication Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{COMPOSITE STRUCTURE DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{composite}
+\caption{Composite Structure Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{STATE MACHINE DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{state}
+\caption{State Machine Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{COMPONENT DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{component}
+\caption{Component Diagram}
+\end{figure}
+\\
+\newpage
+\subsubsection{DEPLOYMENT DIAGRAM}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=15 cm]{deployment}
+\caption{Deployment Diagram}
+\end{figure}
+\\
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{plain}
+\begin{center}
+\section{IMPLEMENTATION DETAILS}
+\end{center} 
+\hspace{0.7cm}\\
+\subsection{PROJECT ARCHITECTURE}
+\\
+\newpage
+\subsection{ALGORITHM}
+\\
+\newpage
+\subsection{TECHNOLOGIES AND LIBRARIES USED}
+\\
+\subsubsection{JAVA}
+\\
+\hspace{0.7 cm} Java is a general-purpose computer language
+ that is concurrent, class-based, object-oriented. It contains features like classes, objects, encapsulation, abstraction, inheritance and polymorphism. Java is designed by  James Gosling and Sun Microsystems. Java is simple, robust, secure, system independent language, portability, interpreted,multithreaded. Sun Microsystems Inc. has divided Java into three parts - Java SE, Java EE and Java ME.
+\\
+\begin{itemize}
+\item \textbf{Java SE:}
+\\
+\hspace{0.7 cm} It is the Java Standard Edition that contains basic core java classes. This edition is used to develop standard applets and applications.
+\\
+\item \textbf{Java EE:}
+\\
+\hspace{0.7 cm} It is the Java Enterprise Edition and it contains classes that are beyond Java SE. To use many of the classes in Java EE, Java SE is used. It mainly concentrates on providing business solutions on a network.
+\\
+\item \textbf{Java ME:}
+\\
+\hspace{0.7 cm} It stands for Java Micro Edition. It is for developers who develop code for portable devices, such as a
+ PDA or a cellular phone.
+\end{itemize}
+\\
+
+\newpage
+\subsubsection{HTML}
+\\
+\hspace{0.7 cm} HTML is a markup language commonly used to create Web pages. A markup language provides a way to describe the structure of text and graphics on a Web page. It is developed and maintained by World Wide Web consortium (W3C). The term hyper signifies the navigation from one location to another in a non-linear fashion. HTML defines the content, i.e. the structure and the layout of a Web page with the help of elements and attributes. An element includes the start and the end tags, with some content within them, and attributes provide additional information about the elements.
+\\
+
+\newpage
+\subsubsection{JAVASCRIPT}
+\\
+\hspace{0.7 cm} JavaScript is an object-oriented scripting language that is used to design interactive websites. It is developed by Netscape and works in all major browsers, such as Internet Explorer, Firefox, Chrome, Opera, and Safari. It is used with HTML code to add dynamic content to their websites. It is an interpreted language.
+\\
+
+\newpage
+\subsubsection{CSS}
+\\
+\hspace{0.7 cm} CSS is a style sheet language that is used to describe the apperance and formatting of a Web document, which is written in a markup language. It enables one to keep separate the instructions related to the presentation of Web content fron the Web content itself.
+\\
+\hspace{0.7 cm}A CSS style sheet consists of a list of rules, which in turn consists of one or more selectors and a declaration block. Selectors are used to declare the marku elements to which a style applies to, while a declaration block consists of a list of declarations in braces.
+\\
+
+\newpage
+\subsubsection{SERVLET}
+\\
+\hspace{0.7 cm} A servlet is a simple Java class, which is dynamically loaded on a Web server and thereby enhances the functionality of the Web server. Servlets are secure and portable as they run on JVM embedded with the Web server and cannot operate outside the domain of the Web server. That is servlets are objects that generate dynamic content after processing requests that originate from a Web browser. They are Java components that are used to create dynamic Web applications. Servlets can run on any Java-enabled platform and are usually designed to process HTTP requests, such as GET and POST.
+\\
+
+\newpage
+\subsubsection{ANDROID}
+\\
+\hspace{0.7 cm} Android is an operating system based on Linux with Java programming interface. It provides tools such as a compiler, debugger and a device emulator as well as JVM. It is created by the Open Handset Alliance which is lead by Google.
+\\
+\hspace{0.7 cm} Android uses a special virtual machine, e.g. the Dalvik Virtual Machine. dalvik uses special bytecode. Therefore one cannot run standard of Java bytecode on Android. It provides a tool "dx" which allows conerting Java Class files into "dex" files. Android applications are packed into an .apk(Android Package) file.
+\\
+\hspace{0.7 cm} Every Android application runs in its own process and under its own user id which is generated automatically by the Android system during deployment. Therefore the application is isolated from other running applications and a misbehaving applications cannot easily harm other Android application.
+\\
+
+\subsection{ANDROID DEVELOPMENT TOOLS}
+\\
+\subsubsection{ANDROID SDK}
+\\
+\hspace{0.7 cm} The Android Software Development Kit(SDK) contains the necessary tools to create, compile and package Android application. Most of these tools are command line based.
+\\
+\hspace{0.7 cm} It also provides an Android device emulator, so that Android application can be tested without a real Android phone. AVD (Android Virtual device)via the Android SDK can be created, which run in the emulator.
+\\
+\hspace{0.7 cm} It contains the Android debug bridge(adb) tool which allows to connect to an virtual or real Android device.
+\\
+
+\subsubsection{ANDROID DEVELOPMENT TOOLS}
+\\
+\hspace{0.7 cm} Google provides the ADT to develope Android applications with Eclipse. ADT is a set of components (plug-ins) which extend the Eclipse IDE with Android development capabilities.  
+\\
+\hspace{0.7 cm} ADT contains all required functionalities to create, compile, debug and deploy Android applications from the Eclipde IDE. It also allows creating and starting AVDs.
+\\
+\newpage
+\subsubsection{ECLIPSE}
+\\
+\hspace{0.7 cm} Eclipse is an IDE. It contains a base workspace and an extensible plug-in system for customizing the environment. Written mostly in Java, it can be used to develop applications. 
+\\
+
+\newpage
+\subsubsection{APACHE TOMCAT SERVER}
+\\
+\hspace{0.7 cm} Apache Tomcat is an open-source web server and servlet. Tomcat implements several Java Servlet, JavaServer Pages(JSP), Java EL, and WebSocket, and provides a "pure Java" HTTP web server environment for Java code to run in.  
+\\
+
+\newpage
+\subsubsection{MYSQL}
+\\
+\hspace{0.7 cm} MySQL is the world's second most widely used relational database management system (RDBMS) and most widely used open-source RDBMS. MySQL is a key part of LAMP (Linux, Apache, MySQL, PHP/ Perl/ Python), the fast-growing open source enterprise software stack. It uses SQL which is the most popular language for adding, accessing and managing content in a database.
+\\
+
+\newpage
+\subsection{DATABASE DETAILS}
+\\
+\newpage
+\subsection{INTERFACE DETAILS}
+\\
+\newpage
+\subsection{SCREENSHOTS AND CODE}
+\subsubsection{Splash Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{splash}
+\caption{Splash Screen}
+\end{figure}
+\hspace{0.7 cm}<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"\\
+    xmlns:tools="http://schemas.android.com/tools"\\
+    android:layout_width="match_parent"\\
+    android:layout_height="match_parent"\\
+   android:background="@drawable/back"\\
+    tools:context=".Hint1" >\\
+\\
+    <TextView\\
+        android:id="@+id/textViewKM"\\
+        android:layout_width="wrap_content"\\
+        android:layout_height="wrap_content"\\
+        android:layout_alignParentLeft="true"\\
+        android:layout_alignParentRight="true"\\
+        android:layout_below="@+id/serverImageView"\\
+        android:gravity="center_horizontal"\\
+        android:text="Future CRM"\\
+        android:textAppearance="?android:attr/textAppearanceLarge"\\
+        android:textColor="#B1B1FF"\\
+        android:textSize="35dp"\\
+        android:textStyle="bold|italic"\\
+        android:typeface="serif" />\\
+\\
+    <ImageView\\
+        android:id="@+id/serverImageView"\\
+        android:layout_width="wrap_content"\\
+        android:layout_height="wrap_content"\\
+        android:layout_alignParentLeft="true"\\
+        android:layout_alignParentRight="true"\\
+        android:layout_centerVertical="true"\\
+        android:src="@drawable/knapsack" />\\
+\\
+</RelativeLayout>\\
+\\
+\newpage
+\\
+\subsubsection{Register User Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{register}
+\caption{Register User Screen}
+\end{figure}
+\\
+\subsubsection{Sign in as guest Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{sign}
+\caption{Sign In As Guest Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}public void checkConnectivity() {\\
+		runOnUiThread(new Runnable() {\\
+\\
+			@Override\\
+			public void run() {\\
+				// TODO Auto-generated method stub\\
+				SharedPreferences s = PreferenceManager.getDefaultSharedPreferences(LoginActivity.this);\\
+
+				boolean success = checkConnectivityServer();\\
+				\\
+				if (success) {\\
+					SharedPreferences.Editor editor = s.edit();\\
+					editor.putString("MAIN_SERVER_IP",AndroidConstants.MAIN_SERVER_IP + "");\\
+					editor.putString("MAIN_SERVER_PORT",AndroidConstants.MAIN_SERVER_PORT + "");\\
+					editor.commit();\\
+					checkUserDetails();\\
+
+				} else {\\
+
+					String MAIN_SERVER_IP=s.getString("MAIN_SERVER_IP",AndroidConstants.MAIN_SERVER_IP);\\
+					String MAIN_SERVER_PORT=s.getString("MAIN_SERVER_PORT",AndroidConstants.MAIN_SERVER_PORT);\\
+					if (!MAIN_SERVER_IP
+							.equalsIgnoreCase(AndroidConstants.MAIN_SERVER_IP)
+							|| !MAIN_SERVER_PORT
+									.equalsIgnoreCase(AndroidConstants.MAIN_SERVER_PORT)) {\\
+						success = checkConnectivityServer(MAIN_SERVER_IP,
+								StringHelper.n2i(MAIN_SERVER_PORT));\\
+						if (success) {\\
+							AndroidConstants.MAIN_SERVER_IP = MAIN_SERVER_IP;\\
+							AndroidConstants.MAIN_SERVER_PORT = MAIN_SERVER_PORT;\\
+							checkUserDetails();\\
+						} else {\\
+							System.out.println("Redirecting to Config 1");\\
+\\
+							mHandler.post(new Runnable() {\\
+\\
+								@Override\\
+								public void run() {\\
+									AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+											LoginActivity.this);\\
+
+									// set title\\
+									alertDialogBuilder
+											.setTitle("Server not available ");\\
+\\
+									// set dialog message\\
+									alertDialogBuilder.setMessage("Sign in as guest ?")
+											.setCancelable(false)
+											.setPositiveButton(
+													"Yes",
+													new DialogInterface.OnClickListener() {\\
+														public void onClick(\\
+																DialogInterface dialog,
+																int id) {\\
+															go(RegisterActivity.class);\\
+\\
+														}\\
+													})\\
+											.setNegativeButton(
+													"No",
+													new DialogInterface.OnClickListener() {\\
+														public void onClick(
+																DialogInterface dialog,
+																int id) {\\
+															go(ConfigTabActivity.class);\\
+\\
+														}\\
+													});\\
+\\
+									// create alert dialog\\
+									AlertDialog alertDialog = alertDialogBuilder
+											.create();\\
+
+									alertDialog.show();\\
+								}\\
+
+							});\\
+							// go(ConfigTabActivity.class);\\
+						}\\
+					} else {\\
+						System.out.println("Redirecting to Config 2");\\
+						mHandler.post(new Runnable() {\\
+\\
+							@Override\\
+							public void run() {\\
+								AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+										LoginActivity.this);\\
+										\\
+
+								// set title\\
+								alertDialogBuilder
+										.setTitle("Server not available ");\\
+
+								// set dialog message\\
+								alertDialogBuilder
+										.setMessage("Sign in as guest ?")
+										.setCancelable(false)
+										.setPositiveButton(
+												"Yes",
+												new DialogInterface.OnClickListener() {\\
+													public void onClick(\\
+															DialogInterface dialog,
+															int id) {\\
+														go(HomeActivity.class);\\
+\\
+													}\\
+												})\\
+										.setNegativeButton(
+												"No",
+												new DialogInterface.OnClickListener() {\\
+													public void onClick(
+															DialogInterface dialog,
+															int id) {\\
+														go(ConfigTabActivity.class);\\
+\\
+													}\\
+												});\\
+\\
+								// create alert dialog\\
+								AlertDialog alertDialog = alertDialogBuilder
+										.create();\\
+								alertDialog.show();\\
+
+							}\\
+						});\\
+					}\\
+				}\\
+			}\\
+		});\\
+	}\\
+	
+\newpage
+\\
+\subsubsection{Server Connection Parameters Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{server}
+\caption{Server Connection Parameters Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}public void onCreate(Bundle savedInstanceState) {\\
+		super.onCreate(savedInstanceState);\\
+		setContentView(R.layout.config);\\
+		TabHost tabs = (TabHost) findViewById(R.id.tabHost);\\
+		android.os.StrictMode.ThreadPolicy tp = android.os.StrictMode.ThreadPolicy.LAX;\\
+		android.os.StrictMode.setThreadPolicy(tp);\\
+		tabs.setup();\\
+
+		TabHost.TabSpec spec1 = tabs.newTabSpec("tag1");\\
+
+		spec1.setContent(R.id.tab1);\\
+
+		spec1.setIndicator("", getResources().getDrawable(R.drawable.settings));\\
+
+		tabs.addTab(spec1);\\
+\\
+		// Server Settings\\
+		ipaddress = (EditText) findViewById(R.id.editText1);\\
+		port = (EditText) findViewById(R.id.editText2);\\
+		taxi1km = (EditText) findViewById(R.id.editText3);\\
+		taxirates = (EditText) findViewById(R.id.editText4);\\
+		SharedPreferences s = PreferenceManager
+				.getDefaultSharedPreferences(ConfigTabActivity.this);\\
+		ipaddress.setText(s.getString("MAIN_SERVER_IP",
+				AndroidConstants.MAIN_SERVER_IP + ""));\\
+		port.setText(s.getString("MAIN_SERVER_PORT",
+				AndroidConstants.MAIN_SERVER_PORT + ""));\\
+		taxi1km.setText(s.getString("taxiRates1stkm", "17"));\\
+		taxirates.setText(s.getString("taxirates", "10"));\\
+	}\\
+\\
+	public void toast(String message) {\\
+		Toast t = Toast.makeText(ConfigTabActivity.this, message,
+				Toast.LENGTH_LONG);\\
+		t.show();\\
+	}\\
+\\
+	ProgressDialog progressDialog = null;\\
+\\
+	public void fnConfig(View v) {\\
+
+		String newIp = ipaddress.getText().toString().trim();\\
+		int newPort = StringHelper.nullObjectToIntegerEmpty(port.getText()
+				.toString());\\
+		SharedPreferences s = PreferenceManager
+				.getDefaultSharedPreferences(ConfigTabActivity.this);\\
+		SharedPreferences.Editor editor = s.edit();\\
+		editor.putString("MAIN_SERVER_IP", newIp);\\
+		editor.putString("MAIN_SERVER_PORT", String.valueOf(newPort));\\
+		editor.putString("taxiRates1stkm",
+				String.valueOf(taxi1km.getText().toString()));\\
+		editor.putString("taxirates",
+				String.valueOf(taxirates.getText().toString()));\\
+		editor.commit();\\
+
+		boolean success = LoginActivity.checkConnectivityServer(s.getString(
+				"MAIN_SERVER_IP", AndroidConstants.MAIN_SERVER_IP), Integer
+				.parseInt(s.getString("MAIN_SERVER_PORT",
+						AndroidConstants.MAIN_SERVER_PORT)));\\
+		if (success) {\\
+			go(LoginActivity.class);\\
+
+		} else {\\
+			toast("Not able to connect");\\
+		}\\
+
+	}\\
+\\
+
+\newpage
+\\
+\subsubsection{List of Attraction Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{attraction}
+\caption{List of Attraction Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}protected void onCreate(Bundle savedInstanceState) {\\
+		super.onCreate(savedInstanceState);\\
+		setContentView(R.layout.activity_types_list);\\
+		address = this.getIntent().getStringExtra("addr");\\
+		SharedPreferences s = PreferenceManager
+				.getDefaultSharedPreferences(TypesList.this);\\
+		type = s.getString("types", CategoryConstants.ATTRACTIONS);\\
+		toast(type);\\
+		displayListView();\\
+	}\\
+	listView.setOnItemClickListener(new OnItemClickListener() {\\
+			public void onItemClick(AdapterView parent, View view,
+					int position, long id) {\\
+				// When clicked, show a toast with the TextView text\\
+				TypeEntity country = (TypeEntity) parent
+						.getItemAtPosition(position);\\
+				Toast.makeText(getApplicationContext(),
+						"Clicked on Row: " + country.getName(),
+						Toast.LENGTH_LONG).show();\\
+			}\\
+			
+\newpage
+\\
+\subsubsection{Direction Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{directions}
+\caption{Direction Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}public class GetDirections extends Activity {\\
+\\
+	@Override\\
+	protected void onCreate(Bundle savedInstanceState) {\\
+		super.onCreate(savedInstanceState);\\
+		setContentView(R.layout.activity_get_directions);\\
+	}\\
+\\
+	@Override\\
+	public boolean onCreateOptionsMenu(Menu menu) {\\
+		// Inflate the menu; this adds items to the action bar if it is present.\\
+		getMenuInflater().inflate(R.menu.activity_get_directions, menu);\\
+\\
+		// get action bar\\
+		ActionBar actionBar = getActionBar();\\
+\\
+		// Enabling Up / Back navigation\\
+		actionBar.setDisplayHomeAsUpEnabled(true);\\
+		return true;\\
+	}\\
+}\\
+\\
+
+\newpage
+\\
+\subsubsection{Routes Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{route}
+\caption{Route Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}
+\\
+
+\newpage
+\\
+\subsubsection{Weather Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{weather}
+\caption{Weather Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}public class TempratureHelper {\\
+	public static void main(String[] args) {\\
+		getWeatherData("18.5089776", "73.791714");\\
+	}\\
+
+	public static HashMap map = new HashMap();\\
+	static {\\
+		map.put("200", "thunderstorm with light rain #11d.png#Thunderstorm");\\
+		map.put("201", "thunderstorm with rain #11d.png#Thunderstorm");\\
+		map.put("202", "thunderstorm with heavy rain #11d.png#Thunderstorm");\\
+		map.put("210", "light thunderstorm #11d.png#Thunderstorm");\\
+		map.put("211", "thunderstorm #11d.png#Thunderstorm");\\
+		map.put("212", "heavy thunderstorm #11d.png#Thunderstorm");\\
+		map.put("221", "ragged thunderstorm #11d.png#Thunderstorm");\\
+		map.put("230", "thunderstorm with light drizzle #11d.png#Thunderstorm");\\
+		map.put("231", "thunderstorm with drizzle #11d.png#Thunderstorm");\\
+		map.put("232", "thunderstorm with heavy drizzle #11d.png#Thunderstorm");\\
+		map.put("300", "light intensity drizzle #09d.png#Drizzle");\\
+		map.put("301", "drizzle #09d.png#Drizzle");\\
+		map.put("302", "heavy intensity drizzle #09d.png#Drizzle");\\
+		map.put("310", "light intensity drizzle rain #09d.png#Drizzle");\\
+		map.put("311", "drizzle rain #09d.png#Drizzle");\\
+		map.put("312", "heavy intensity drizzle rain #09d.png#Drizzle");\\
+		map.put("313", "shower rain and drizzle #09d.png#Drizzle");\\
+		map.put("314", "heavy shower rain and drizzle #09d.png#Drizzle");\\
+		map.put("321", "shower drizzle #09d.png#Drizzle");\\
+		map.put("500", "light rain #10d.png#Rain");\\
+		map.put("501", "moderate rain #10d.png#Rain");\\
+		map.put("502", "heavy intensity rain #10d.png#Rain");\\
+		map.put("503", "very heavy rain #10d.png#Rain");\\
+		map.put("504", "extreme rain #10d.png#Rain");\\
+		map.put("511", "freezing rain #13d.png#Rain");\\
+		map.put("520", "light intensity shower rain #09d.png#Rain");\\
+		map.put("521", "shower rain #09d.png#Rain");\\
+		map.put("522", "heavy intensity shower rain #09d.png#Rain");\\
+		map.put("531", "ragged shower rain #09d.png#Rain");\\
+		map.put("600", "light snow #13d.png#Snow");\\
+		map.put("601", "snow #13d.png#Snow");\\
+		map.put("602", "heavy snow #13d.png#Snow");\\
+		map.put("611", "sleet #13d.png#Snow");\\
+		map.put("612", "shower sleet #13d.png#Snow");\\
+		map.put("615", "light rain and snow #13d.png#Snow");\\
+		map.put("616", "rain and snow #13d.png#Snow");\\
+		map.put("620", "light shower snow #13d.png#Snow");\\
+		map.put("621", "shower snow #13d.png#Snow");\\
+		map.put("622", "heavy shower snow #13d.png#Snow");\\
+		map.put("701", "mist #50d.png#Atmosphere");\\
+		map.put("711", "smoke #50d.png#Atmosphere");\\
+		map.put("721", "haze #50d.png#Atmosphere");\\
+		map.put("731", "sand, dust whirls #50d.png#Atmosphere");\\
+		map.put("741", "fog #50d.png#Atmosphere");\\
+		map.put("751", "sand #50d.png#Atmosphere");\\
+		map.put("761", "dust #50d.png#Atmosphere");\\
+		map.put("762", "volcanic ash #50d.png#Atmosphere");\\
+		map.put("771", "squalls #50d.png#Atmosphere");\\
+		map.put("781", "tornado #50d.png#Atmosphere");\\
+		map.put("800", "clear sky #01d.png#Clouds");\\
+		map.put("801", "few clouds #02d.png #Clouds");\\
+		map.put("802", "scattered clouds #03d.png#Clouds");\\
+		map.put("803", "broken clouds #04d.png #Clouds");\\
+		map.put("804", "overcast clouds #04d.png#Clouds");\\
+		map.put("900", "tornado#NA#Extreme");\\
+		map.put("901", "tropical storm#NA#Extreme");\\
+		map.put("902", "hurricane#NA#Extreme");\\
+		map.put("903", "cold#NA#Extreme");\\
+		map.put("904", "hot#NA#Extreme");\\
+		map.put("905", "windy#NA#Extreme");\\
+		map.put("906", "hail#NA#Extreme");\\
+		map.put("951", "calm#NA#Additional");\\
+		map.put("952", "light breeze#NA#Additional");\\
+		map.put("953", "gentle breeze#NA#Additional");\\
+		map.put("954", "moderate breeze#NA#Additional");\\
+		map.put("955", "fresh breeze#NA#Additional");\\
+		map.put("956", "strong breeze#NA#Additional");\\
+		map.put("957", "high wind, near gale#NA#Additional");\\
+		map.put("958", "gale#NA#Additional");\\
+		map.put("959", "severe gale#NA#Additional");\\
+		map.put("960", "storm#NA#Additional");\\
+		map.put("961", "violent storm#NA#Additional");\\
+		map.put("962", "hurricane #NA#Additional");\\
+	}\\
+\\
+	public static HashMap getWeatherData(String lat, String lng) {\\
+		String q = "http://api.openweathermap.org/data/2.5/weather?lat="
+				+ lat.trim() + "&lon=" + lng.trim();\\
+		StringBuffer json = StringHelper.readURLContent(q);\\
+		HashMap hm = new HashMap();\\
+		try {\\
+			JSONObject jobj = new JSONObject(json.toString());\\
+			JSONObject temp = (JSONObject) jobj.get("main");\\
+			JSONArray weather = (JSONArray) jobj.get("weather");\\
+			System.out.println(weather.length());\\
+\\
+			JSONObject we = (JSONObject) weather.get(0);\\
+			System.out.println(we.get("id"));\\
+			System.out.println(we.get("main"));\\
+			System.out.println(we.get("description"));\\
+			System.out.println(StringHelper.n2d(temp.get("temp")));\\
+			double temp2 = StringHelper.n2d(temp.get("temp"));\\
+			temp2 = temp2 - 273;\\
+			hm.put("temp", temp2);\\
+			hm.put("id", we.get("id"));\\
+			hm.put("main", we.get("main"));\\
+			hm.put("description", we.get("description"));\\
+
+		} catch (JSONException e) {\\
+			// TODO Auto-generated catch block\\
+			e.printStackTrace();\\
+		}\\
+		return hm;\\
+	}\\
+		s = PreferenceManager.getDefaultSharedPreferences(HomeActivity.this);\\
+		type = s.getString("types", CategoryConstants.ATTRACTIONS);\\
+		distance = s.getString("distance", "1000");\\
+		placesHelper = new PlacesHelper();\\
+		buttonDistance = (TextView) findViewById(R.id.textView4);\\
+		weatherImageView = (ImageView) findViewById(R.id.imageViewWeather);\\
+		textViewWeather = (TextView) findViewById(R.id.textViewWeather);\\
+
+		buttonType = (TextView) findViewById(R.id.category);\\
+		System.out.println("Home oncreate");\\
+		addressStr = this.getIntent().getStringExtra("addr");\\
+
+		System.out.println("addressStr.................................."
+				+ addressStr);\\
+}\\
+\\
+
+\newpage
+\\
+\subsubsection{Place Information Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{place}
+\caption{Place Information Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}public class Place extends Activity {\\
+	@Override\\
+	protected void onCreate(Bundle savedInstanceState) {\\
+		super.onCreate(savedInstanceState);\\
+		setContentView(R.layout.activity_place);\\
+		placeName = (TextView) findViewById(R.id.textViewPlaceName);\\
+		placeAdd = (TextView) findViewById(R.id.textViewPlaceAddress);\\
+		placePhoneNumber = (TextView) findViewById(R.id.textViewPhoneNumber);\\
+		imageView = (ImageView) findViewById(R.id.serverImageView);\\
+		ratingBar = (RatingBar) findViewById(R.id.ratingBar1);\\
+		url = (TextView) findViewById(R.id.textViewURL);\\
+		clodesMSG = (TextView) findViewById(R.id.textViewclosedMSG);\\
+
+		txtreview = (TextView) findViewById(R.id.textView6);\\
+		txtopeningsHRS = (TextView) findViewById(R.id.textView8);\\
+
+		PlaceEntity placeEntity = (PlaceEntity) getIntent()
+				.getSerializableExtra("place");\\
+
+		placeName.setText(placeEntity.getDetailEntity().getName());\\
+		placeAdd.setText(placeEntity.getDetailEntity().getFormatted_address());\\
+		String ph = placeEntity.getDetailEntity().getFormatted_phone_number();\\
+		if (ph == null || ph.equals("")) {\\
+			placePhoneNumber.setText("No Data found");\\
+		} else {\\
+			placePhoneNumber.setText(ph);\\
+		}\\
+		String urlstr = placeEntity.getDetailEntity().getUrl();\\
+		if (urlstr == null || urlstr.equals("")) {\\
+			url.setText("No Data found");\\
+		} else {\\
+			url.setText(Html.fromHtml("<a href=\"" + urlstr + "\">" + urlstr
+					+ "</a>"));\\
+			url.setMovementMethod(LinkMovementMethod.getInstance());\\
+		}\\
+\\
+		boolean open = placeEntity.getDetailEntity().isOpen_now();\\
+		if (!open) {\\
+			imageView.setImageResource(R.drawable.closed_sign);\\
+			clodesMSG
+					.setText("Closed can also mean there is no data for this field !");\\
+		} else {\\
+			imageView.setImageResource(R.drawable.open_sign);\\
+			clodesMSG.setText("");\\
+		}\\
+\\
+		Integer rating = placeEntity.getDetailEntity().getUser_ratings();\\
+		if (rating == null) {\\
+			rating = 0;\\
+		}\\
+		ratingBar.setEnabled(false);\\
+		ratingBar.setStepSize(0.5f);\\
+		ratingBar.setNumStars(5);\\
+		ratingBar.setMax(5);\\
+
+		ratingBar.setRating(rating);\\
+
+		DayEntity[] dayEntities = placeEntity.getDetailEntity()
+				.getOpening_HRS();\\
+		String openingHRSData = "";\\
+		if (dayEntities != null && dayEntities.length > 0) {\\
+			for (DayEntity dayEntity : dayEntities) {\\
+				try {\\
+					openingHRSData = openingHRSData
+							+ StringHelper.getDay(dayEntity.getDay())
+							+ " \r\n Open Hrs :  " + dayEntity.getOpenHRS()
+							+ " \r\n Close Hrs:  " + dayEntity.getCloseHRS();\\
+					openingHRSData = openingHRSData
+							+ "\r\n--------------------------------------------------------------------\r\n";
+				} catch (Exception e) {\\
+
+				}\\
+			}\\
+			txtopeningsHRS.setText(openingHRSData);\\
+		} else if (openingHRSData.equals("")) {\\
+			txtopeningsHRS.setText("No Data found");\\
+		}\\
+
+		ReviewEntity[] entities = placeEntity.getDetailEntity().getReviews();\\
+		String reviewsData = "";\\
+		if (entities != null && entities.length > 0) {\\
+			for (ReviewEntity entity : entities) {\\
+				reviewsData = reviewsData + "Author :" + entity.getAuthorName();\\
+				reviewsData = reviewsData + "\r\nReview :" + entity.getText();\\
+				reviewsData = reviewsData
+						+ "\r\n--------------------------------------------------------------------\r\n";\\
+			}\\
+			txtreview.setText(reviewsData);\\
+		} else {\\
+			txtreview.setText("No Data found");\\
+		}\\
+
+	}\\
+\\
+	public void callNumber(View view) {\\
+		String phone_no = placePhoneNumber.getText().toString()
+				.replaceAll("-", "");\\
+		Intent callIntent = new Intent(Intent.ACTION_CALL);\\
+		callIntent.setData(Uri.parse("tel:" + phone_no));\\
+
+		startActivity(callIntent);\\
+	}\\
+
+}\\
+\\
+
+\newpage
+\\
+\subsubsection{Time Distance and Fare Screens}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{distance}
+\caption{Distance to travel Screen}
+\\
+\includegraphics[width=12 cm]{time}
+\caption{Time to travel Screen}
+\\
+\includegraphics[width=12 cm]{fare}
+\caption{Fare Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}@Override\\
+	public boolean onOptionsItemSelected(MenuItem item) {\\
+		Intent main = null;\\
+		final int timeId = R.id.time;\\
+		final int distanceId = R.id.distance;\\
+		if (item.getItemId() == timeId) {\\
+			showAlert(time, "Required Timew to Travel");\\
+		} else if (item.getItemId() == distanceId) {\\
+			showAlert(distance, "Required Distance to Travel");\\
+		} else if (item.getItemId() == R.id.item1) {\\
+			SharedPreferences s = PreferenceManager
+					.getDefaultSharedPreferences(GoogleMapActivity.this);\\
+			int rate = Integer.parseInt((s.getString("taxirates", "10")));\\
+			int rate1km = Integer
+					.parseInt((s.getString("taxiRates1stkm", "17")));\\
+			double fare = 0;\\
+			String distanceStr = distance.substring(0,
+					distance.indexOf("km") - 1);\\
+			double distanceInt = Double.parseDouble(distanceStr);\\
+			if (distanceInt > 1) {\\
+				fare = (distanceInt - 1) * rate;\\
+				fare = fare + rate1km;\\
+			} else {\\
+				fare = rate1km;\\
+			}\\
+
+			showAlert(String.valueOf(fare) + " Rs. ", "Taxi Fare");\\
+		}\\
+		return true;\\
+
+	}\\
+	\\
+	
+\newpage
+\\
+\subsubsection{Launch Complaint Screen}
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=12 cm]{complaint}
+\caption{Launch Complaint Screen}
+\end{figure}
+\\
+\hspace{0.7 cm}@Override\\
+	protected void onCreate(Bundle savedInstanceState) {\\
+		super.onCreate(savedInstanceState);\\
+		setContentView(R.layout.launchcomplaint);\\
+		txtVehiclenumber = (EditText) findViewById(R.id.txtVechicleNumber);\\
+		txtcomplaint = (EditText) findViewById(R.id.txtComplaint);\\
+		src = getIntent().getStringExtra("src");\\
+		dest = getIntent().getStringExtra("dest");\\
+		orignalFare = getIntent().getFloatExtra("orignalfare", 0f);\\
+		if (src != null && dest != null && orignalFare != null) {
+			txtcomplaint.append("Start : " + src + "\nDestination : " + dest
+					+ "\nOrginal Fare : " + orignalFare + "\nFare Taken : ");\\
+		}\\
+\\
+	public void sendcomplaint(View view) {\\
+
+		try {\\
+			String phoneNo = AndroidConstants.COMPLAINT_NUMBER;\\
+			System.out.println("reading complaint ....");\\
+			String complaint = txtcomplaint.getText().toString();\\
+			System.out.println("read complaint ...." + complaint);\\
+			String vehicleno = txtVehiclenumber.getText().toString();\\
+			System.out.println("read veh No ...." + vehicleno);\\
+
+			String message = "Complaint for Vehicle No. " + vehicleno + " :-  "
+					+ complaint;\\
+			System.out.println("Message to send : " + message);\\
+			if (vehicleno.length() > 0 && message.length() > 0
+					&& message != null && vehicleno != null){\\
+				sendSMS(phoneNo, message);\\
+				}\\
+			else{\\
+				Toast.makeText(getBaseContext(),
+						"Please enter both Vehicle number and complaint.",
+						Toast.LENGTH_SHORT).show();\\
+						}\\
+		} catch (Exception e) {\\
+			System.out.println("in exception "
+					+ txtcomplaint.getText().toString());\\
+			Toast.makeText(getApplicationContext(),
+					"in exception " + e.getMessage(), Toast.LENGTH_LONG).show();\\
+		}\\
+
+	}\\
+\\
+	private void sendSMS(String phoneNumber, String message) {\\
+		String SENT = "SMS_SENT";\\
+		String DELIVERED = "SMS_DELIVERED";\\
+
+		PendingIntent sentPI = PendingIntent.getBroadcast(this, 0, new Intent(
+				SENT), 0);\\
+
+		PendingIntent deliveredPI = PendingIntent.getBroadcast(this, 0,
+				new Intent(DELIVERED), 0);\\
+\\
+		// ---when the SMS has been sent---\\
+		registerReceiver(new BroadcastReceiver() {\\
+			@Override\\
+			public void onReceive(Context arg0, Intent arg1) {\\
+				switch (getResultCode()) {\\
+				case 1: Activity.RESULT_OK:
+					Toast.makeText(getBaseContext(), "SMS sent",
+							Toast.LENGTH_SHORT).show();\\
+					break;\\
+				case 2: SmsManager.RESULT_ERROR_GENERIC_FAILURE:\\
+					Toast.makeText(getBaseContext(), "Generic failure",
+							Toast.LENGTH_SHORT).show();\\
+					break;\\
+				case 3: SmsManager.RESULT_ERROR_NO_SERVICE:\\
+					Toast.makeText(getBaseContext(), "No service",
+							Toast.LENGTH_SHORT).show();\\
+					break;\\
+				case 4: SmsManager.RESULT_ERROR_NULL_PDU:\\
+					Toast.makeText(getBaseContext(), "Null PDU",
+							Toast.LENGTH_SHORT).show();\\
+					break;\\
+				case 5: SmsManager.RESULT_ERROR_RADIO_OFF:\\
+					Toast.makeText(getBaseContext(), "Radio off",
+							Toast.LENGTH_SHORT).show();\\
+					break;\\
+				}\\
+			}\\
+		}, new IntentFilter(SENT));\\
+\\
+		// ---when the SMS has been delivered---\\
+		registerReceiver(new BroadcastReceiver() {\\
+			@Override\\
+			public void onReceive(Context arg0, Intent arg1) {\\
+				switch (getResultCode()) {\\
+				case 1: Activity.RESULT_OK:
+					Toast.makeText(getBaseContext(), "SMS delivered",
+							Toast.LENGTH_SHORT).show();\\
+					break;\\
+				case 2: Activity.RESULT_CANCELED:
+					Toast.makeText(getBaseContext(), "SMS not delivered",
+							Toast.LENGTH_SHORT).show();\\
+					break;\\
+				}\\
+			}\\
+		}, new IntentFilter(DELIVERED));\\
+\\
+		SmsManager sms = SmsManager.getDefault();\\
+		ArrayList<String> parts = sms.divideMessage(message);\\
+		sms.sendMultipartTextMessage(phoneNumber, null, parts, null, null);\\
+		Toast.makeText(getApplicationContext(), "SMS Sent", Toast.LENGTH_LONG)
+				.show();\\
+	}\\
+}\\
+\\
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{plain}
+\begin{center}
+\section{TESTING}
+\end{center} 
+\hspace{0.7cm}\\
+\subsection{TEST PLAN}
+\\
+\newpage
+\subsection{TEST CASES}
+\\
+\newpage
+\subsection{MANUAL TEST CASES}
+\\
+\textbf{Android Module}
+\\
+
+\begin{enumerate}
+\item\textbf{Screen: Splash Screens}\\
+\begin{table}
+\renewcommand{\arraystreatch{1.5}}
+\centering
+
+\begin{tabular}{|1||c|c|c|c|c|}
+\hline
+SRNO& CONDITION DESCRIPTION&EXCEPTED RESULT& ACTUAL RESULT&DATA USED&STATUS\\
+\hline
+1&Splash Screen& Splash screens should appear one after the other& Splash screens appears one after the other& & & Pass\\
+\hline
+\caption{Test Cases for Splash Screens}
+\end{tabular}
+\end{table}
+
+\item \textbf{Screen: Connect to server or sign in as guest}\\
+\begin{tabular}{|1||c|c|c|c|c|}
+\hline
+SRNO& CONDITION DESCRIPTION&EXCEPTED RESULT& ACTUAL RESULT&DATA USED&STATUS\\
+\hline
+1& Sign in as guest message->Yes& Register Screen should appear& Register Screen appears& & Pass\\
+\hline
+2&Sign in as guest message->No& Server Screen should appear& Server Screen appears& & Pass\\
+\hline
+\caption{Test Cases for Connect to server or sign in as guest Screen}
+\end{tabular}
+\end{table}
+
+\item \textbf{Screen:Register user}\\
+\begin{tabular}{|1||c|c|c|c|c|}
+\hline
+SRNO& CONDITION DESCRIPTION&EXCEPTED RESULT& ACTUAL RESULT&DATA USED&STATUS\\
+\hline
+1& When the user touches the textfield of username,email-id,password, keyboard should appear & Keyboard should appear& Keyboard appears& & Pass\\
+\hline
+2& When the user touches the register button & User should get registered and should be navigated to the home page& User gets registered and is navigated to the home page & & Pass\\
+\hline
+\caption{Test Cases for Register User Screen}
+\end{tabular}
+\end{table}
+
+\item\textbf{Screen: Server connection parameter Screen}\\
+\begin{table}
+\renewcommand{\arraystreatch{1.5}}
+\centering
+\begin{tabular}{|1||c|c|c|c|c|}
+\hline
+SRNO& CONDITION DESCRIPTION&EXCEPTED RESULT& ACTUAL RESULT&DATA USED&STATUS\\
+\hline
+1& When the user touches the textfield of server ip and port and taxi rates, keyboard should appear & Keyboard should appear& Keyboard appears& & Pass\\
+\hline
+2& When the user touches the check connectivity button & User should get connected to the server& User is connected to the server & & Pass\\
+\hline
+\caption{Test Cases for Server Connection Parameter Screen}
+\end{tabular}
+\end{table}
+
+\item\textbf{Screen: Main Screen}\\
+\begin{table}
+\renewcommand{\arraystreatch{1.5}}
+\centering
+\begin{tabular}{|1||c|c|c|c|c|}
+\hline
+SRNO& CONDITION DESCRIPTION&EXCEPTED RESULT& ACTUAL RESULT&DATA USED&STATUS\\
+\hline
+1& when menu is touched dropdown list should appear& Dropdown list should appear & Dropdown list appears& & Pass\\
+\hline
+2& Location of user &Location os user should be displayed& Location of user is displayed & & Pass\\
+\hline
+3& Direction symbol is touched&  User should be navigated to the screen showing directions& User is navigated to the directions screen & & Pass\\
+\hline
+4& Information symbol is touched& User should be navigated to information screen& User is navigated to the information screen & &Pass\\
+\hline
+5& Location on map symbol is touched& User should be navigated to the maps& User is navigated to the map& & Pass\\
+\hline
+\caption{Test Cases for Main Screen}
+\end{tabular}
+\end{table}
+
+\item\textbf{Screen: Menu option}\\
+\begin{table}
+\renewcommand{\arraystreatch{1.5}}
+\centering
+\begin{tabular}{|1||c|c|c|c|c|}
+\hline
+SRNO& CONDITION DESCRIPTION&EXCEPTED RESULT& ACTUAL RESULT&DATA USED&STATUS\\
+\hline
+1& Change distance is touched& Distances should appear and as per the distance selected by the user list of places should appear& Distances appears and as per the distance selected by the user list of places appears& &Pass\\
+\hline
+2& Change category is touched& User should be navigated to the list of attractions screen and as per the attractions selected by the user places on the main screen should appear& User is navigated to the list of attractions screen and as per the attractions selected by the user places on the main screen appears& & Pass\\
+\hline
+3& Launch complaint is touched& User should be navigated to the complaint screen& User is navigated to complaint screen& User is navigated to the complaint screen & & Pass\\
+\hline
+4& Display of distance and fare calculated& User should be able to get a popup of the calculated disatnce and fare& User gets the calculated distance and fare& &Pass\\
+\hline
+\caption{Test Cases for Menu option}
+\end{tabular}
+\end{table}
+
+\end{enumerate}
+\\
+\newpage
+\textbf{Web Module}
+\\
+\newpage
+\subsection{AUTOMATED TEST CASES}
+\\
+\subsubsection{TEST LOG}
+\\
+\newpage
+\subsubsection{TEST REPORT}
+\\
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{plain} 
+\begin{center}
+\section{CONCLUSION AND FUTURE ENHANCEMENT}
+\end{center}
+\hspace{0.7 cm}
+\\
+
+%---------------------------------------------------------------------------------------------------------
+
+\newpage
+\pagestyle{plain}
+\begin{center}
+\section{REFRENCES}
+\end{center}
+\begin{enumerate}
+\item 
+\end{enumerate}
+
+%---------------------------------------------------------------------------------------------------------
+
+\end{document}
+
+%---------------------------------------------------------------------------------------------------------
