@@ -1,0 +1,46 @@
+\BOOKMARK [1][-]{figure.caption.1}{ACKNOWLEDGMENT}{}% 1
+\BOOKMARK [1][-]{figure.caption.1}{ABSTRACT}{}% 2
+\BOOKMARK [1][-]{figure.caption.1}{LIST OF FIGURES}{}% 3
+\BOOKMARK [1][-]{section.1}{INTRODUCTION}{}% 4
+\BOOKMARK [2][-]{subsection.1.1}{Need}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.2}{Basic Concept}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.3}{Applications}{section.1}% 7
+\BOOKMARK [1][-]{section.2}{LITERATURE SURVEY}{}% 8
+\BOOKMARK [2][-]{subsection.2.1}{Customer Relationship Management Using Android Phone in Tourism}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.2}{inGuide-Interactive Guide}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{On-line GPS Track Simplification Algorithm for Mobile Platforms}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.4}{Overview on Android- The New Mobile Operating System}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{ALGORITHM}{}% 13
+\BOOKMARK [2][-]{subsection.3.1}{GPS Tracking Algorithim}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{SOFTWARE \040HARDWARE REQUIREMENTS}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{HARDWARE \040SOFTWARE SPECIFICATIONS}{section.4}% 16
+\BOOKMARK [3][-]{subsubsection.4.1.1}{HARDWARE INTERFACES}{subsection.4.1}% 17
+\BOOKMARK [3][-]{subsubsection.4.1.2}{SOFTWARE INTERFACES}{subsection.4.1}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Tools Used}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Eclipse}{subsection.4.2}% 20
+\BOOKMARK [3][-]{subsubsection.4.2.2}{JDK}{subsection.4.2}% 21
+\BOOKMARK [3][-]{subsubsection.4.2.3}{MySQL}{subsection.4.2}% 22
+\BOOKMARK [1][-]{section.5}{DESIGN DIAGRAMS}{}% 23
+\BOOKMARK [2][-]{subsection.5.1}{Overview}{section.5}% 24
+\BOOKMARK [3][-]{subsubsection.5.1.1}{System Initialization}{subsection.5.1}% 25
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Listing Tourist Attraction}{subsection.5.1}% 26
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Tracking the Path}{subsection.5.1}% 27
+\BOOKMARK [3][-]{subsubsection.5.1.4}{Fare Calculation}{subsection.5.1}% 28
+\BOOKMARK [3][-]{subsubsection.5.1.5}{Lodge Complaint}{subsection.5.1}% 29
+\BOOKMARK [3][-]{subsubsection.5.1.6}{Listing the Emergency Numbers}{subsection.5.1}% 30
+\BOOKMARK [2][-]{subsection.5.2}{Data Flow Diagram}{section.5}% 31
+\BOOKMARK [3][-]{subsubsection.5.2.1}{DFD Level 0}{subsection.5.2}% 32
+\BOOKMARK [3][-]{subsubsection.5.2.2}{DFD Level 1}{subsection.5.2}% 33
+\BOOKMARK [2][-]{subsection.5.3}{ER Diagram}{section.5}% 34
+\BOOKMARK [2][-]{subsection.5.4}{UML Diagrams}{section.5}% 35
+\BOOKMARK [3][-]{subsubsection.5.4.1}{Use Case Diagram}{subsection.5.4}% 36
+\BOOKMARK [3][-]{subsubsection.5.4.2}{Class Diagram}{subsection.5.4}% 37
+\BOOKMARK [3][-]{subsubsection.5.4.3}{Activity Diagram}{subsection.5.4}% 38
+\BOOKMARK [3][-]{subsubsection.5.4.4}{Package Diagram}{subsection.5.4}% 39
+\BOOKMARK [3][-]{subsubsection.5.4.5}{Sequence Diagram}{subsection.5.4}% 40
+\BOOKMARK [3][-]{subsubsection.5.4.6}{Communication Diagram}{subsection.5.4}% 41
+\BOOKMARK [3][-]{subsubsection.5.4.7}{Composite Structure Diagram}{subsection.5.4}% 42
+\BOOKMARK [3][-]{subsubsection.5.4.8}{State Machine Diagram}{subsection.5.4}% 43
+\BOOKMARK [3][-]{subsubsection.5.4.9}{Component Diagram}{subsection.5.4}% 44
+\BOOKMARK [3][-]{subsubsection.5.4.10}{Deployment Diagram}{subsection.5.4}% 45
+\BOOKMARK [1][-]{section.6}{REFRENCES}{}% 46

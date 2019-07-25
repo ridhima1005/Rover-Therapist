@@ -1,0 +1,1096 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2014.9.5)  12 MAR 2015 16:56
+entering extended mode
+**RT.tex
+("F:\Project\Rover Therapist Project\Latex Partial Report\RT.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count90
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+\captionmargin=\dimen111
+\captionmargin@=\dimen112
+\captionwidth=\dimen113
+\caption@indent=\dimen114
+\caption@parindent=\dimen115
+\caption@hangindent=\dimen116
+)
+\c@ContinuedFloat=\count91
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box26
+\shadowsize=\dimen117
+\@Sbox=\box27
+\do@VerbBox=\toks16
+\the@fancyput=\toks17
+\this@fancyput=\toks18
+\EndVerbatimTokens=\toks19
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks20
+\ex@=\dimen118
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen119
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks21
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks22
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks23
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+Package: pdfpages 2011/03/10 v0.4n Insert pages of external PDF documents (AM)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count104
+\calc@Bcount=\count105
+\calc@Adimen=\dimen127
+\calc@Bdimen=\dimen128
+\calc@Askip=\skip46
+\calc@Bskip=\skip47
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count106
+\calc@Cskip=\skip48
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+File: pppdftex.def 2011/03/10 v0.4n Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box30
+\AM@toc@title=\toks25
+\c@AM@survey=\count107
+\AM@templatesizebox=\box31
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count108
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2011/04/17 v6.82g Hypertext links for LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
+Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
+Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+)
+\@linkdim=\dimen131
+\Hy@linkcounter=\count109
+\Hy@pagecounter=\count110
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2011/04/17 v6.82g Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count111
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4026.
+Package hyperref Info: Link nesting OFF on input line 4031.
+Package hyperref Info: Hyper index ON on input line 4034.
+Package hyperref Info: Plain pages OFF on input line 4041.
+Package hyperref Info: Backreferencing OFF on input line 4046.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4264.
+\c@Hy@tempcnt=\count112
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4617.
+\Fld@menulength=\count113
+\Field@Width=\dimen132
+\Fld@charsize=\dimen133
+Package hyperref Info: Hyper figures OFF on input line 5701.
+Package hyperref Info: Link nesting OFF on input line 5706.
+Package hyperref Info: Hyper index ON on input line 5709.
+Package hyperref Info: backreferencing OFF on input line 5716.
+Package hyperref Info: Link coloring OFF on input line 5721.
+Package hyperref Info: Link coloring with OCG OFF on input line 5726.
+Package hyperref Info: PDF/A mode OFF on input line 5731.
+LaTeX Info: Redefining \ref on input line 5771.
+LaTeX Info: Redefining \pageref on input line 5775.
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
+)
+
+Package hyperref Message: Driver: hpdftex.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2011/04/17 v6.82g Hyperref driver for pdfTeX
+\Fld@listcount=\count117
+\c@bookmark@seq@number=\count118
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip51
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.sty"
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tocloft\tocloft.sty"
+Package: tocloft 2010/10/13 v2.3e parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 43.
+\cftparskip=\skip52
+\cftbeforetoctitleskip=\skip53
+\cftaftertoctitleskip=\skip54
+\cftbeforepartskip=\skip55
+\cftpartnumwidth=\skip56
+\cftpartindent=\skip57
+\cftbeforesecskip=\skip58
+\cftsecindent=\skip59
+\cftsecnumwidth=\skip60
+\cftbeforesubsecskip=\skip61
+\cftsubsecindent=\skip62
+\cftsubsecnumwidth=\skip63
+\cftbeforesubsubsecskip=\skip64
+\cftsubsubsecindent=\skip65
+\cftsubsubsecnumwidth=\skip66
+\cftbeforeparaskip=\skip67
+\cftparaindent=\skip68
+\cftparanumwidth=\skip69
+\cftbeforesubparaskip=\skip70
+\cftsubparaindent=\skip71
+\cftsubparanumwidth=\skip72
+\cftbeforeloftitleskip=\skip73
+\cftafterloftitleskip=\skip74
+\cftbeforefigskip=\skip75
+\cftfigindent=\skip76
+\cftfignumwidth=\skip77
+\c@lofdepth=\count119
+\c@lotdepth=\count120
+\cftbeforelottitleskip=\skip78
+\cftafterlottitleskip=\skip79
+\cftbeforetabskip=\skip80
+\cfttabindent=\skip81
+\cfttabnumwidth=\skip82
+)
+("F:\Project\Rover Therapist Project\Latex Partial Report\RT.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(90.3375pt, 434.90039pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=434.90039pt
+* \textheight=700.50687pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count121
+\scratchdimen=\dimen134
+\scratchbox=\box32
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen135
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks27
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 18.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count127
+)
+LaTeX Info: Redefining \ref on input line 18.
+LaTeX Info: Redefining \pageref on input line 18.
+LaTeX Info: Redefining \nameref on input line 18.
+
+("F:\Project\Rover Therapist Project\Latex Partial Report\RT.out")
+("F:\Project\Rover Therapist Project\Latex Partial Report\RT.out")
+\@outlinefile=\write4
+
+<modernlogo.jpg, id=185, 138.5175pt x 180.675pt>
+File: modernlogo.jpg Graphic file (type jpg)
+ <use modernlogo.jpg>
+Package pdftex.def Info: modernlogo.jpg used on input line 78.
+(pdftex.def)             Requested size: 71.13188pt x 92.77986pt.
+
+Overfull \hbox (484.2087pt too wide) has occurred while \output is active
+[]
+ []
+
+[1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <F:/Project/Rover Therapis
+t Project/Latex Partial Report/modernlogo.jpg>]
+File: modernlogo.jpg Graphic file (type jpg)
+ <use modernlogo.jpg>
+Package pdftex.def Info: modernlogo.jpg used on input line 102.
+(pdftex.def)             Requested size: 71.13188pt x 92.77986pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
+
+ []
+
+
+Overfull \hbox (484.2087pt too wide) has occurred while \output is active
+[]
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.140 \newpage
+               [1] [1]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+! Misplaced alignment tab character &.
+l.169 ... tourist and charging him unfair tariff &
+                                                   finding out emergency num...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[2] ("F:\Project\Rover Therapist Project\Latex Partial Report\RT.lof"
+Overfull \hbox (8.87766pt too wide) detected at line 1
+\OT1/cmr/m/n/12 3.1.0.1  
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Overfull \hbox (8.87766pt too wide) detected at line 2
+\OT1/cmr/m/n/12 3.1.0.2  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 3
+\OT1/cmr/m/n/12 3.1.0.3  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 4
+\OT1/cmr/m/n/12 5.1.6.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 5
+\OT1/cmr/m/n/12 5.2.1.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 6
+\OT1/cmr/m/n/12 5.2.2.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 7
+\OT1/cmr/m/n/12 5.3.0.2  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 8
+\OT1/cmr/m/n/12 5.4.1.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 9
+\OT1/cmr/m/n/12 5.4.2.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 10
+\OT1/cmr/m/n/12 5.4.3.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 11
+\OT1/cmr/m/n/12 5.4.4.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 12
+\OT1/cmr/m/n/12 5.4.5.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 13
+\OT1/cmr/m/n/12 5.4.6.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 14
+\OT1/cmr/m/n/12 5.4.7.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 15
+\OT1/cmr/m/n/12 5.4.8.1  
+ []
+
+
+Overfull \hbox (8.87766pt too wide) detected at line 16
+\OT1/cmr/m/n/12 5.4.9.1  
+ []
+
+
+Overfull \hbox (14.7526pt too wide) detected at line 17
+\OT1/cmr/m/n/12 5.4.10.1  
+ []
+
+)
+\tf@lof=\write5
+ [3] ("F:\Project\Rover Therapist Project\Latex Partial Report\RT.toc"
+! Misplaced alignment tab character &.
+<argument> ...section.4}{\numberline {4}SOFTWARE &
+                                                   HARDWARE REQUIREMENTS}\hy...
+l.15 ...ARE & HARDWARE REQUIREMENTS}{7}{section.4}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...ion.4.1}{\numberline {4.1}HARDWARE &
+                                                   SOFTWARE SPECIFICATIONS}\...
+l.16 ...OFTWARE SPECIFICATIONS}{7}{subsection.4.1}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][]  
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][]  
+ []
+
+[4])
+\tf@toc=\write6
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 206.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 206.
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ì in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.215 \subsection
+                 {Basic Concept}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--220
+
+ []
+
+[1]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+ [2]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.248 \subsection
+                 {Customer Relationship Management Using Android Phone in To...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (12.43585pt too wide) in paragraph at lines 248--248
+[]\OT1/cmr/bx/n/14.4 Customer Re-la-tion-ship Man-age-ment Us-ing An-droid Phon
+e
+ []
+
+
+Overfull \hbox (5.42596pt too wide) in paragraph at lines 254--257
+\OT1/cmr/bx/n/12 ing Tech-nol-ogy and Ad-vanced En-gi-neer-ing, Web-site: www.i
+jetae.com (ISSN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--257
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--265
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
+
+ []
+
+[3]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--286
+
+ []
+
+[4]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+ <point.png, id=316, 498.36188pt x 295.1025pt>
+File: point.png Graphic file (type png)
+ <use point.png>
+Package pdftex.def Info: point.png used on input line 305.
+(pdftex.def)             Requested size: 298.75394pt x 176.90974pt.
+
+<track.png, id=318, 529.98pt x 337.26pt>
+File: track.png Graphic file (type png)
+ <use track.png>
+Package pdftex.def Info: track.png used on input line 311.
+(pdftex.def)             Requested size: 298.75394pt x 190.11482pt.
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no ≥ in font cmr12!
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no ≥ in font cmr12!
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no ± in font cmr12!
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.318 ...rpose the value of the angle Œ≥, Œ≥=| Œ±_
+                                                  (1  )-  Œ±_2  |
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.320 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no ± in font cmr12!
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no ≥ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no • in font cmr12!
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no ≥ in font cmr12!
+
+Overfull \hbox (331.62402pt too wide) in paragraph at lines 317--320
+\OT1/cmr/m/n/12 pose the value of the an-gle , =| $[]1) \OMS/cmsy/m/n/12   []j\
+OML/cmm/m/it/12 Theaboveequationisobtained:If[]h; thenitisassumedthatpointp\OT1
+/cmr/m/n/12 2\OML/cmm/m/it/12 isapartofthetrack; otherwisepointp\OT1/cmr/m/n/12
+ 2\OML/cmm/m/it/12 isignored:$ 
+ []
+
+[5 <F:/Project/Rover Therapist Project/Latex Partial Report/point.png> <F:/Proj
+ect/Rover Therapist Project/Latex Partial Report/track.png>]
+<flowchart.png, id=325, 496.85625pt x 378.66469pt>
+File: flowchart.png Graphic file (type png)
+ <use flowchart.png>
+Package pdftex.def Info: flowchart.png used on input line 323.
+(pdftex.def)             Requested size: 298.75394pt x 227.69168pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.337 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[6 <F:/Project/Rover Therapist Project/Latex Partial Report/flowchart.png>]
+! Misplaced alignment tab character &.
+<argument> SOFTWARE &
+                      HARDWARE REQUIREMENTS
+l.343 \section{SOFTWARE & HARDWARE REQUIREMENTS}
+                                                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `alignment tab' on input line 343.
+
+! Misplaced alignment tab character &.
+<argument> HARDWARE &
+                      SOFTWARE SPECIFICATIONS
+l.346 ...ction{HARDWARE & SOFTWARE SPECIFICATIONS}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `alignment tab' on input line 346.
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.378 \begin
+            {itemize}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[7]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.384 \begin
+            {itemize}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[8]
+Runaway argument?
+{0.7cm) System gets initialized and detects the current position of t\ETC.
+! Paragraph ended before \@hspace was complete.
+<to be read again> 
+                   \par 
+l.405 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{0.7cm)The source is detected using the current GPS location and the \ETC.
+! Paragraph ended before \@hspace was complete.
+<to be read again> 
+                   \par 
+l.408 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{0.7cm)Once user has selected path, the system will track the path ti\ETC.
+! Paragraph ended before \@hspace was complete.
+<to be read again> 
+                   \par 
+l.411 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{0.7cm)Once the destination is reached the exact fare for the journey\ETC.
+! Paragraph ended before \@hspace was complete.
+<to be read again> 
+                   \par 
+l.414 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{0.7cm)If driver is not agreed with the fare calculated by the system\ETC.
+! Paragraph ended before \@hspace was complete.
+<to be read again> 
+                   \par 
+l.417 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+Runaway argument?
+{0.7cm)Based on the GPS location the emergency numbers will be fetche\ETC.
+! Paragraph ended before \@hspace was complete.
+<to be read again> 
+                   \par 
+l.420 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<System.png, id=343, 549.55313pt x 380.17032pt>
+File: System.png Graphic file (type png)
+ <use System.png>
+Package pdftex.def Info: System.png used on input line 423.
+(pdftex.def)             Requested size: 426.79134pt x 295.25545pt.
+ [9 <F:/Project/Rover Therapist Project/Latex Partial Report/System.png>]
+<level.png, id=348, 517.935pt x 237.88875pt>
+File: level.png Graphic file (type png)
+ <use level.png>
+Package pdftex.def Info: level.png used on input line 431.
+(pdftex.def)             Requested size: 426.79134pt x 196.03557pt.
+ [10 <F:/Project/Rover Therapist Project/Latex Partial Report/level.png>]
+<levell.png, id=354, 507.39563pt x 348.55219pt>
+File: levell.png Graphic file (type png)
+ <use levell.png>
+Package pdftex.def Info: levell.png used on input line 438.
+(pdftex.def)             Requested size: 426.79134pt x 293.19135pt.
+ [11 <F:/Project/Rover Therapist Project/Latex Partial Report/levell.png>]
+<er.png, id=360, 526.96875pt x 365.11406pt>
+File: er.png Graphic file (type png)
+ <use er.png>
+Package pdftex.def Info: er.png used on input line 445.
+(pdftex.def)             Requested size: 341.43306pt x 236.57478pt.
+ [12 <F:/Project/Rover Therapist Project/Latex Partial Report/er.png>]
+<UseCase.png, id=367, 372.64218pt x 411.78844pt>
+File: UseCase.png Graphic file (type png)
+ <use UseCase.png>
+Package pdftex.def Info: UseCase.png used on input line 453.
+(pdftex.def)             Requested size: 426.79134pt x 471.64285pt.
+ [13 <F:/Project/Rover Therapist Project/Latex Partial Report/UseCase.png>]
+<class.png, id=372, 455.45157pt x 559.33969pt>
+File: class.png Graphic file (type png)
+ <use class.png>
+Package pdftex.def Info: class.png used on input line 460.
+(pdftex.def)             Requested size: 426.79134pt x 524.14923pt.
+ [14 <F:/Project/Rover Therapist Project/Latex Partial Report/class.png>]
+<activity.png, id=377, 372.64218pt x 417.81094pt>
+File: activity.png Graphic file (type png)
+ <use activity.png>
+Package pdftex.def Info: activity.png used on input line 467.
+(pdftex.def)             Requested size: 426.79134pt x 478.54077pt.
+ [15 <F:/Project/Rover Therapist Project/Latex Partial Report/activity.png>]
+<package.png, id=382, 545.03625pt x 350.81062pt>
+File: package.png Graphic file (type png)
+ <use package.png>
+Package pdftex.def Info: package.png used on input line 474.
+(pdftex.def)             Requested size: 426.79134pt x 274.70175pt.
+ [16 <F:/Project/Rover Therapist Project/Latex Partial Report/package.png>]
+<Seq.png, id=387, 557.08125pt x 671.50874pt>
+File: Seq.png Graphic file (type png)
+ <use Seq.png>
+Package pdftex.def Info: Seq.png used on input line 481.
+(pdftex.def)             Requested size: 426.79134pt x 514.47101pt.
+ [17 <F:/Project/Rover Therapist Project/Latex Partial Report/Seq.png>]
+<communication.png, id=393, 527.72156pt x 414.04688pt>
+File: communication.png Graphic file (type png)
+ <use communication.png>
+Package pdftex.def Info: communication.png used on input line 488.
+(pdftex.def)             Requested size: 426.79134pt x 334.85806pt.
+
+[18 <F:/Project/Rover Therapist Project/Latex Partial Report/communication.png>
+] <composite.png, id=400, 773.13844pt x 874.76813pt>
+File: composite.png Graphic file (type png)
+ <use composite.png>
+Package pdftex.def Info: composite.png used on input line 495.
+(pdftex.def)             Requested size: 426.79134pt x 482.89923pt.
+
+[19 <F:/Project/Rover Therapist Project/Latex Partial Report/composite.png>]
+<state.png, id=406, 537.50812pt x 408.02437pt>
+File: state.png Graphic file (type png)
+ <use state.png>
+Package pdftex.def Info: state.png used on input line 502.
+(pdftex.def)             Requested size: 426.79134pt x 323.97937pt.
+ [20 <F:/Project/Rover Therapist Project/Latex Partial Report/state.png>]
+<component.png, id=411, 546.54187pt x 368.87813pt>
+File: component.png Graphic file (type png)
+ <use component.png>
+Package pdftex.def Info: component.png used on input line 509.
+(pdftex.def)             Requested size: 426.79134pt x 288.05586pt.
+ [21 <F:/Project/Rover Therapist Project/Latex Partial Report/component.png>]
+<deployment.png, id=416, 537.50812pt x 268.00125pt>
+File: deployment.png Graphic file (type png)
+ <use deployment.png>
+Package pdftex.def Info: deployment.png used on input line 516.
+(pdftex.def)             Requested size: 426.79134pt x 212.79825pt.
+
+[22 <F:/Project/Rover Therapist Project/Latex Partial Report/deployment.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 548.
+
+[23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 548.
+ ("F:\Project\Rover Therapist Project\Latex Partial Report\RT.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 548.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 548.
+Package rerunfilecheck Info: File `RT.out' has not changed.
+(rerunfilecheck)             Checksum: 8E1B017D36017A23C6580044FD478F3E;3323.
+ ) 
+Here is how much of TeX's memory you used:
+ 9169 strings out of 494045
+ 134501 string characters out of 3145979
+ 236078 words of memory out of 3000000
+ 12234 multiletter control sequences out of 15000+200000
+ 10411 words of font info for 39 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 37i,9n,39p,1436b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on RT.pdf (30 pages, 993980 bytes).
+PDF statistics:
+ 481 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 459 words of extra memory for PDF output out of 10000 (max. 10000000)
+
