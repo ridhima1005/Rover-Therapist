@@ -1,0 +1,75 @@
+\BOOKMARK [1][-]{Doc-Start}{ACKNOWLEDGMENT}{}% 1
+\BOOKMARK [1][-]{Doc-Start}{ABSTRACT}{}% 2
+\BOOKMARK [1][-]{Doc-Start}{LIST OF TABLES}{}% 3
+\BOOKMARK [1][-]{Doc-Start}{LIST OF FIGURES}{}% 4
+\BOOKMARK [1][-]{Doc-Start}{LIST OF FIGURES}{}% 5
+\BOOKMARK [1][-]{section.1}{INTRODUCTION}{}% 6
+\BOOKMARK [2][-]{subsection.1.1}{INTRODUCTION}{section.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.1.1}{PURPOSE}{subsection.1.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.1.2}{OVERVIEW}{subsection.1.1}% 9
+\BOOKMARK [3][-]{subsubsection.1.1.3}{BUSINESS CONTEXT}{subsection.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.2}{PROBLEM STATEMENT}{section.1}% 11
+\BOOKMARK [2][-]{subsection.1.3}{PROJECT SCOPE}{section.1}% 12
+\BOOKMARK [2][-]{subsection.1.4}{PROJECT OBJECTIVES}{section.1}% 13
+\BOOKMARK [2][-]{subsection.1.5}{ASSUMPTIONS AND DEPENDENCIES}{section.1}% 14
+\BOOKMARK [3][-]{subsubsection.1.5.1}{Assumptions}{subsection.1.5}% 15
+\BOOKMARK [3][-]{subsubsection.1.5.2}{Dependencies}{subsection.1.5}% 16
+\BOOKMARK [2][-]{subsection.1.6}{LITERATURE SURVEY}{section.1}% 17
+\BOOKMARK [3][-]{subsubsection.1.6.1}{Customer Relationship Management Using Android Phone in Tourism}{subsection.1.6}% 18
+\BOOKMARK [3][-]{subsubsection.1.6.2}{inGuide-Interactive Guide}{subsection.1.6}% 19
+\BOOKMARK [3][-]{subsubsection.1.6.3}{On-line GPS Track Simplification Algorithm for Mobile Platforms}{subsection.1.6}% 20
+\BOOKMARK [3][-]{subsubsection.1.6.4}{Overview on Android- The New Mobile Operating System}{subsection.1.6}% 21
+\BOOKMARK [1][-]{section.2}{PROJECT PLAN}{}% 22
+\BOOKMARK [2][-]{subsection.2.1}{TASK SHEET SCHEDULE}{section.2}% 23
+\BOOKMARK [1][-]{section.3}{REQUIREMENT ANALYSIS}{}% 24
+\BOOKMARK [2][-]{subsection.3.1}{HARDWARE REQUIREMENTS}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.2}{SOFTWARE REQUIREMENTS}{section.3}% 26
+\BOOKMARK [1][-]{section.4}{PROJECT DESIGN}{}% 27
+\BOOKMARK [2][-]{subsection.4.1}{E-R DIAGRAM}{section.4}% 28
+\BOOKMARK [2][-]{subsection.4.2}{DATA FLOW DIAGRAMS}{section.4}% 29
+\BOOKMARK [3][-]{subsubsection.4.2.1}{DFD LEVEL0}{subsection.4.2}% 30
+\BOOKMARK [3][-]{subsubsection.4.2.2}{DFD LEVEL1}{subsection.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.3}{UML DIAGRAMS}{section.4}% 32
+\BOOKMARK [3][-]{subsubsection.4.3.1}{USE CASE DIAGRAM}{subsection.4.3}% 33
+\BOOKMARK [3][-]{subsubsection.4.3.2}{CLASS DIAGRAM}{subsection.4.3}% 34
+\BOOKMARK [3][-]{subsubsection.4.3.3}{ACTIVITY DIAGRAM}{subsection.4.3}% 35
+\BOOKMARK [3][-]{subsubsection.4.3.4}{PACKAGE DIAGRAM}{subsection.4.3}% 36
+\BOOKMARK [3][-]{subsubsection.4.3.5}{SEQUENCE DIAGRAM}{subsection.4.3}% 37
+\BOOKMARK [3][-]{subsubsection.4.3.6}{COMMUNICATION DIAGRAM}{subsection.4.3}% 38
+\BOOKMARK [3][-]{subsubsection.4.3.7}{COMPOSITE STRUCTURE DIAGRAM}{subsection.4.3}% 39
+\BOOKMARK [3][-]{subsubsection.4.3.8}{STATE MACHINE DIAGRAM}{subsection.4.3}% 40
+\BOOKMARK [3][-]{subsubsection.4.3.9}{COMPONENT DIAGRAM}{subsection.4.3}% 41
+\BOOKMARK [3][-]{subsubsection.4.3.10}{DEPLOYMENT DIAGRAM}{subsection.4.3}% 42
+\BOOKMARK [1][-]{section.5}{IMPLEMENTATION DETAILS}{}% 43
+\BOOKMARK [2][-]{subsection.5.1}{PROJECT ARCHITECTURE}{section.5}% 44
+\BOOKMARK [2][-]{subsection.5.2}{ALGORITHM}{section.5}% 45
+\BOOKMARK [2][-]{subsection.5.3}{TECHNOLOGIES, TOOLS AND LIBRARIES USED}{section.5}% 46
+\BOOKMARK [3][-]{subsubsection.5.3.1}{TECHNOLOGIES}{subsection.5.3}% 47
+\BOOKMARK [3][-]{subsubsection.5.3.2}{TOOLS}{subsection.5.3}% 48
+\BOOKMARK [3][-]{subsubsection.5.3.3}{LIBRARIES}{subsection.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.4}{DATABASE DETAILS}{section.5}% 50
+\BOOKMARK [2][-]{subsection.5.5}{INTERFACE DETAILS}{section.5}% 51
+\BOOKMARK [2][-]{subsection.5.6}{SCREEN SHOTS AND CODE}{section.5}% 52
+\BOOKMARK [3][-]{subsubsection.5.6.1}{Splash Screen}{subsection.5.6}% 53
+\BOOKMARK [3][-]{subsubsection.5.6.2}{Register User Screen}{subsection.5.6}% 54
+\BOOKMARK [3][-]{subsubsection.5.6.3}{Sign in as guest Screen}{subsection.5.6}% 55
+\BOOKMARK [3][-]{subsubsection.5.6.4}{Server Connection Parameters Screen}{subsection.5.6}% 56
+\BOOKMARK [3][-]{subsubsection.5.6.5}{List of Attraction Screen}{subsection.5.6}% 57
+\BOOKMARK [3][-]{subsubsection.5.6.6}{Direction Screen}{subsection.5.6}% 58
+\BOOKMARK [3][-]{subsubsection.5.6.7}{Routes Screen}{subsection.5.6}% 59
+\BOOKMARK [3][-]{subsubsection.5.6.8}{Weather Screen}{subsection.5.6}% 60
+\BOOKMARK [3][-]{subsubsection.5.6.9}{Place Information Screen}{subsection.5.6}% 61
+\BOOKMARK [3][-]{subsubsection.5.6.10}{Time Distance and Fare Screens}{subsection.5.6}% 62
+\BOOKMARK [3][-]{subsubsection.5.6.11}{Launch Complaint Screen}{subsection.5.6}% 63
+\BOOKMARK [1][-]{section.6}{TESTING}{}% 64
+\BOOKMARK [2][-]{subsection.6.1}{MANUAL TEST CASES}{section.6}% 65
+\BOOKMARK [3][-]{subsubsection.6.1.1}{SPLASH SCREEN}{subsection.6.1}% 66
+\BOOKMARK [3][-]{subsubsection.6.1.2}{SIGN IN AS GUEST}{subsection.6.1}% 67
+\BOOKMARK [3][-]{subsubsection.6.1.3}{SERVER PARAMETER CONNECTION SCREEN}{subsection.6.1}% 68
+\BOOKMARK [3][-]{subsubsection.6.1.4}{MAIN SCREEN}{subsection.6.1}% 69
+\BOOKMARK [3][-]{subsubsection.6.1.5}{MENU SCREEN}{subsection.6.1}% 70
+\BOOKMARK [2][-]{subsection.6.2}{AUTOMATED TEST CASES}{section.6}% 71
+\BOOKMARK [3][-]{subsubsection.6.2.1}{TEST LOG}{subsection.6.2}% 72
+\BOOKMARK [3][-]{subsubsection.6.2.2}{TEST REPORT}{subsection.6.2}% 73
+\BOOKMARK [1][-]{section.7}{CONCLUSION AND FUTURE ENHANCEMENT}{}% 74
+\BOOKMARK [1][-]{section.8}{BIBLOGRAPHY}{}% 75

@@ -1,0 +1,75 @@
+\contentsline {section}{ACKNOWLEDGMENT}{i}{Doc-Start}
+\contentsline {section}{ABSTRACT}{ii}{Doc-Start}
+\contentsline {section}{LIST OF TABLES}{vi}{Doc-Start}
+\contentsline {section}{LIST OF FIGURES}{vii}{Doc-Start}
+\contentsline {section}{LIST OF FIGURES}{viii}{Doc-Start}
+\contentsline {section}{\numberline {1}INTRODUCTION}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}INTRODUCTION}{1}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}PURPOSE}{1}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}OVERVIEW}{1}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}BUSINESS CONTEXT}{1}{subsubsection.1.1.3}
+\contentsline {subsection}{\numberline {1.2}PROBLEM STATEMENT}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}PROJECT SCOPE}{2}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}PROJECT OBJECTIVES}{2}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}ASSUMPTIONS AND DEPENDENCIES}{2}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Assumptions}{2}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}Dependencies}{3}{subsubsection.1.5.2}
+\contentsline {subsection}{\numberline {1.6}LITERATURE SURVEY}{3}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Customer Relationship Management Using Android Phone in Tourism}{3}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}inGuide-Interactive Guide}{3}{subsubsection.1.6.2}
+\contentsline {subsubsection}{\numberline {1.6.3}On-line GPS Track Simplification Algorithm for Mobile Platforms}{4}{subsubsection.1.6.3}
+\contentsline {subsubsection}{\numberline {1.6.4}Overview on Android- The New Mobile Operating System}{4}{subsubsection.1.6.4}
+\contentsline {section}{\numberline {2}PROJECT PLAN}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}TASK SHEET SCHEDULE}{5}{subsection.2.1}
+\contentsline {section}{\numberline {3}REQUIREMENT ANALYSIS}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}HARDWARE REQUIREMENTS}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}SOFTWARE REQUIREMENTS}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}PROJECT DESIGN}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}E-R DIAGRAM}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}DATA FLOW DIAGRAMS}{9}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}DFD LEVEL0}{9}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}DFD LEVEL1}{10}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}UML DIAGRAMS}{11}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}USE CASE DIAGRAM}{11}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}CLASS DIAGRAM}{12}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}ACTIVITY DIAGRAM}{13}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.4}PACKAGE DIAGRAM}{14}{subsubsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.5}SEQUENCE DIAGRAM}{15}{subsubsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.6}COMMUNICATION DIAGRAM}{16}{subsubsection.4.3.6}
+\contentsline {subsubsection}{\numberline {4.3.7}COMPOSITE STRUCTURE DIAGRAM}{17}{subsubsection.4.3.7}
+\contentsline {subsubsection}{\numberline {4.3.8}STATE MACHINE DIAGRAM}{18}{subsubsection.4.3.8}
+\contentsline {subsubsection}{\numberline {4.3.9}COMPONENT DIAGRAM}{19}{subsubsection.4.3.9}
+\contentsline {subsubsection}{\numberline {4.3.10}DEPLOYMENT DIAGRAM}{20}{subsubsection.4.3.10}
+\contentsline {section}{\numberline {5}IMPLEMENTATION DETAILS}{21}{section.5}
+\contentsline {subsection}{\numberline {5.1}PROJECT ARCHITECTURE}{21}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}ALGORITHM}{21}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}TECHNOLOGIES, TOOLS AND LIBRARIES USED}{22}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}TECHNOLOGIES}{22}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}TOOLS}{24}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}LIBRARIES}{24}{subsubsection.5.3.3}
+\contentsline {subsection}{\numberline {5.4}DATABASE DETAILS}{25}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}INTERFACE DETAILS}{25}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}SCREEN SHOTS AND CODE}{26}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Splash Screen}{26}{subsubsection.5.6.1}
+\contentsline {subsubsection}{\numberline {5.6.2}Register User Screen}{26}{subsubsection.5.6.2}
+\contentsline {subsubsection}{\numberline {5.6.3}Sign in as guest Screen}{26}{subsubsection.5.6.3}
+\contentsline {subsubsection}{\numberline {5.6.4}Server Connection Parameters Screen}{26}{subsubsection.5.6.4}
+\contentsline {subsubsection}{\numberline {5.6.5}List of Attraction Screen}{26}{subsubsection.5.6.5}
+\contentsline {subsubsection}{\numberline {5.6.6}Direction Screen}{26}{subsubsection.5.6.6}
+\contentsline {subsubsection}{\numberline {5.6.7}Routes Screen}{26}{subsubsection.5.6.7}
+\contentsline {subsubsection}{\numberline {5.6.8}Weather Screen}{26}{subsubsection.5.6.8}
+\contentsline {subsubsection}{\numberline {5.6.9}Place Information Screen}{26}{subsubsection.5.6.9}
+\contentsline {subsubsection}{\numberline {5.6.10}Time Distance and Fare Screens}{26}{subsubsection.5.6.10}
+\contentsline {subsubsection}{\numberline {5.6.11}Launch Complaint Screen}{26}{subsubsection.5.6.11}
+\contentsline {section}{\numberline {6}TESTING}{28}{section.6}
+\contentsline {subsection}{\numberline {6.1}MANUAL TEST CASES}{28}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}SPLASH SCREEN}{29}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}SIGN IN AS GUEST}{30}{subsubsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.3}SERVER PARAMETER CONNECTION SCREEN}{31}{subsubsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.4}MAIN SCREEN}{33}{subsubsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.5}MENU SCREEN}{34}{subsubsection.6.1.5}
+\contentsline {subsection}{\numberline {6.2}AUTOMATED TEST CASES}{36}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}TEST LOG}{36}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}TEST REPORT}{37}{subsubsection.6.2.2}
+\contentsline {section}{\numberline {7}CONCLUSION AND FUTURE ENHANCEMENT}{38}{section.7}
+\contentsline {section}{\numberline {8}BIBLOGRAPHY}{39}{section.8}
